@@ -18,4 +18,10 @@
     &__description{
         margin-bottom: 1.5rem;
     }
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: .5rem;
+    }
 }
