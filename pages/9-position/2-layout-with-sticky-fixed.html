@@ -21,40 +21,168 @@
 </head>
 <!-- //todo: style -->
 <style>
-body{
-    background: #4A148C;
-    color: #fff;
-}
+    * {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 
+    .header1,
+    .sidebar1,
+    .main-content,
+    .footer {
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .header1 {
+        background: #00C853;
+        height: 100px;
+        line-height: 100px;
+
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .hamburger {
+        display: inline-block;
+        position: absolute;
+        top: 25px;
+        left: 40px;
+        font-size: 40px;
+        cursor: pointer;
+        transition: .3s;
+        z-index: 10;
+    }
+
+    .hamburger:hover {
+        color: #fff;
+    }
+
+    .sidebar1 {
+        background: #FF3D00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        height: 100%;
+        width: 240px;
+
+        transition: .3s;
+    }
+    .sidebar1.show-sidebar {
+        right: 0;
+    }
+
+    .main-content {
+        background: #00B0FF;
+        height: 1500px;
+        line-height: 1500px;
+    }
+
+    .footer {
+        background: #004D40;
+        height: 100vh;
+        line-height: 100vh;
+        color: #fff;
+    }
+
+    /* //todo: breakpoint: SM-Landscape Mobile */
+    @media only screen and (min-width: 576px) {}
+
+    /* //todo: breakpoint: MD - Tablet */
+    @media only screen and (min-width: 768px) {
+        .hamburger {
+            display: none;
+        }
+
+        .sidebar1 {
+            position: sticky;
+            right: 0;
+            width: unset;
+            height: 300px;
+        }
+    }
+
+    /* //todo: breakpoint: LG - LapTop */
+    @media only screen and (min-width: 992px) {}
+
+    /* //todo: breakpoint: XL - Monitor */
+    @media only screen and (min-width: 1200px) {}
 </style>
+
 <!-- //todo: body -->
 
 <body>
     <section class="" id="">
-    
-        <div class="container">
+        <div class="container-fluid">
             <div class="row ">
-                <div class="col-12 mb-5">
-                    <article class="">
-                       layout with sticky fixed
-    
+                <div class="col-12">
+                    <header class="header1">
+                        <span>Header</span>
+                        <i class="fas fa-bars hamburger"></i>
+                    </header>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="sidebar1">
+                        <p>Sidbar</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <article class="main-content">
+                        <span>Responsive Sidebar</span>
                     </article>
                 </div>
+
+            </div>
+            <div class="row">
                 <div class="col-12">
-                    <div align="center">
-                        <a href="./9-positions.html" class="button button__danger">بازگشت</a>
+                    <footer class="footer">Footer</footer>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <a href="./9-positions.html" class="btn btn-danger  d-inline-block">بازگشت</a>
                     </div>
                 </div>
             </div>
         </div>
-    
+        
+
+
+
+
     </section>
 
 </body>
 
 <!-- //todo: jsvascript -->
 <script>
+    const sidebar = document.querySelector(".sidebar1")
+    const hamburger = document.querySelector(".hamburger")
+
+    hamburger.addEventListener("click", () => {
+        console.log("clicked on hamburger")
+        sidebar.classList.toggle("show-sidebar")
+    })
+
+    sidebar.addEventListener("click", () => {
+        sidebar.classList.remove("show-sidebar")
+    })
+
+
+
 
 </script>
+
 
 </html>
