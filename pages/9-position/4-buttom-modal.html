@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../css/bootstrap-icons.css" />
     <link rel="stylesheet" href="../../css/style.css">
 
-    <title>special-sticky</title>
+    <title>bottom-modal</title>
 </head>
 <!-- //todo: style -->
 <style>
@@ -27,29 +27,34 @@
     }
 
     .backward {
-
         background: #1A237E;
-        position: sticky;
-        top: 0;
         height: 100vh;
     }
-    .backward__btn{
+
+    .backward__btn {
         position: absolute;
         top: 100px;
         right: 50%;
         translate: 50% -50%;
     }
 
-    .forward {
-        height: 700px;
+    .bottom-modal {
         background: #fff;
-        width: 90%;
+        width: 100%;
+        height: 300px;
         margin: 0 auto;
-        border-radius: 20px;
+        border-radius: 20px 20px 0px 0px;
 
-        position: sticky;
-        top: 0px;
-        z-index: 1;
+        position: absolute;
+        bottom: -100%;
+        opacity: 0;
+
+        transition: .4s;
+    }
+
+    .bottom-modal.show {
+        bottom: 0;
+        opacity: 1;
     }
 
     .dash {
@@ -63,15 +68,30 @@
         translate: 50% -50%;
     }
 </style>
+
 <!-- //todo: body -->
 
 <body>
     <section class="" id="">
-        <div class="backward">
+        <div class="backward position-relative">
             <div class="btn btn-success backward__btn">اطلاعات</div>
-        </div>
-        <div class="forward position-relative">
-            <span class="dash"></span>
+            <div class="bottom-modal">
+                <span class="dash"></span>
+                <div class="container mt-4">
+                    <div class="row">
+                        <div class="col-12 mt-5 fs-5">
+                            <p>نام و نام خانوادگی :<span class="fw-bold">&nbsp;فرشیدخیاط‌پور</span></p>
+                            <p>تحصیلات :<span class="fw-bold">&nbsp فوق لیسانس</span></p>
+                            <p>سن :<span class="fw-bold text-danger">&nbsp;38 سال</span></p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center">
+                            <button class="btn btn-success">ویرایش</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <div class="col-12">
@@ -84,10 +104,11 @@
 
 <!-- //todo: jsvascript -->
 <script>
-const backwardBtn = document.querySelector(".backward__btn")
-backwardBtn.onClick=()=>{
-
-}
+    const backwardBtn = document.querySelector(".backward__btn")
+    const bottomModal = document.querySelector(".bottom-modal")
+    backwardBtn.addEventListener("click", () => {
+        bottomModal.classList.toggle("show")
+    })
 </script>
 
 </html>
