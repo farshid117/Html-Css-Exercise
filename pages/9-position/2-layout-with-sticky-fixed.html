@@ -69,7 +69,7 @@
 
         position: fixed;
         top: 100px;
-        right: -100%;
+        right: -100%; /* go out for mobile-first */
         height: 100%;
         width: 240px;
 
@@ -92,10 +92,10 @@
         color: #fff;
     }
 
-    /* //todo: breakpoint: SM-Landscape Mobile */
+    /* //todo: breakpoint: SM -> (Landscape Mobile) */
     @media only screen and (min-width: 576px) {}
 
-    /* //todo: breakpoint: MD - Tablet */
+    /* //todo: breakpoint: MD -> (Tablet) */
     @media only screen and (min-width: 768px) {
         .hamburger {
             display: none;
@@ -127,7 +127,6 @@
                         <span>Header</span>
                         <i class="fas fa-bars hamburger"></i>
                     </header>
-
                 </div>
             </div>
             <div class="row">
@@ -141,8 +140,8 @@
                         <span>Responsive Sidebar</span>
                     </article>
                 </div>
-
             </div>
+
             <div class="row">
                 <div class="col-12">
                     <footer class="footer">Footer</footer>
@@ -156,11 +155,6 @@
                 </div>
             </div>
         </div>
-        
-
-
-
-
     </section>
 
 </body>
