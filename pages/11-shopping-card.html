@@ -25,9 +25,11 @@
         margin: 0;
         box-sizing: border-box;
     }
-body{
-    background: #fafafa;
-}
+
+    body {
+        background: #fafafa;
+    }
+
     .shopping__right svg {
         width: 15px;
         height: 15px;
@@ -60,16 +62,21 @@ body{
         font-size: 12px;
         font-weight: bold;
     }
-    .card{
-    
+
+    .card {
         transition: .5s;
     }
+
     .card:hover {
-        box-shadow:  4px 4px 0px #0bfb03 ;
+        box-shadow: 4px 4px 0px #0bfb03;
         cursor: pointer;
     }
- 
-    
+
+::selection{
+    color:rgb(0, 255, 30);
+    background: rgb(4, 159, 249);
+}
+
 </style>
 <!-- //todo: body -->
 
@@ -208,15 +215,10 @@ body{
                 </div>
             </div>
 
-            <input type="checkbox">
-            <p class="alert">
-                چک باکس فعال شد
-            </p>
 
-          
 
         </div>
-
+        <p class="digit bg-danger position-relative">134.000.000</p>
     </div>
 
     <div align="center" class="return mt-5">
@@ -226,6 +228,7 @@ body{
 
 <!-- //todo: jsvascript -->
 <script>
+
 
 </script>
 
