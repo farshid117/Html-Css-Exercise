@@ -69,22 +69,30 @@
     }
 
     .card:hover {
-        box-shadow: 4px 4px 0px #0bfb03;
+        box-shadow: 4px 4px 4px #c9c8c8;
         cursor: pointer;
-       
+
+    }
+
+    .card_overley {
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(255, 255, 255, .3), rgba(255, 255, 255, 0));
+        opacity: 0;
+        transition: .5s;
     }
 
     .card:hover .card_overley {
-        position: absolute;
-        inset: 0;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(255, 255, 255, .2));
-        
-
+        opacity: 1;
     }
+
 
 
     .card-text {
         height: 90px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
     }
 
     ::selection {
@@ -141,6 +149,8 @@
                     <div class="card-body">
                         <h6 class="card-title fw-bold">مشخصات محصول</h6>
                         <p class="card-text">
+                            کابل لایتینگ هوشمند بیسوس Baseus C-shaped Lighting Cable lm
+                            کابل لایتینگ هوشمند بیسوس Baseus C-shaped Lighting Cable lm
                             کابل لایتینگ هوشمند بیسوس Baseus C-shaped Lighting Cable lm
                         </p>
                         <div class="discount d-flex align-items-center ">
