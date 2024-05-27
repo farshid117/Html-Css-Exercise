@@ -27,7 +27,21 @@
     }
 
     body {
-        background: #fafafa;
+        background: #080710;
+        height: 100vh;
+        text-align: left
+    }
+    .form-label{
+        color: #fff;
+    }
+    .form{
+       
+        padding: 50px 35px 35px 35px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.13);
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
 
 
@@ -35,23 +49,34 @@
         color: #000;
         background: #ffff00;
     }
-
 </style>
+
 <!-- //todo: body -->
+<body class="">
+    <div class="container h-100 ">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-6 col-lg-6">
+               <div class="form">
+                 <form >
+                     <label for="" class="form-label">first name</label>
+                     <input type="text" class="form-control">
 
-<body class="mt-5">
-    <div class="container ">
-        <div class="row">
+                     <label for="" class="form-label mt-4">first name</label>
+                     <input type="text" class="form-control">
 
-
+                     <div class="form-btn text-center">
+                        <button class="btn btn-primary mt-5"> Login </button>
+                     </div>
+                 </form>
+               </div>
+            </div>
         </div>
     </div>
 
 
-
-    <div align="center" class="return mt-5">
+  <!--   <div align="center" class="return mt-5">
         <a href="/" class="button button__danger">بازگشت</a>
-    </div>
+    </div> -->
 </body>
 
 <!-- //todo: jsvascript -->
