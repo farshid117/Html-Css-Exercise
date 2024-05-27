@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../css/bootstrap-icons.css" />
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>Pseudo-selector</title>
+    <title>Shopping Card</title>
 </head>
 <!-- //todo: style -->
 <style>
@@ -82,17 +82,14 @@
         transition: .5s;
     }
 
-    .card:hover .card_overley {
+    .card_overley:hover {
         opacity: 1;
     }
-
-
 
     .card-text {
         height: 90px !important;
         overflow: hidden;
         text-overflow: ellipsis;
-
     }
 
     ::selection {
@@ -285,8 +282,12 @@
 
 <!-- //todo: jsvascript -->
 <script>
-
+var age = 18 
+if(true){
+    console.log("block log is : ", age)
+    var age = 20
+}
+console.log("global log is : ", age)
 
 </script>
-
 </html>
