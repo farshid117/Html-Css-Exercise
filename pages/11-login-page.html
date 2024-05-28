@@ -27,7 +27,7 @@
     }
 
     body {
-        background:#080710 url("../img/login/login-background.jpg") no-repeat;
+        background:#080710 url("../img/login/login-bg-3.jpeg") no-repeat;
         background-size: cover;
         height: 100vh;
         text-align: left;
@@ -44,8 +44,22 @@
         border: 1px solid rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(5px);
         box-shadow: 0px 4px 6px rgba(0,0,0, 0.1);
-        /* filter:grayscale(100%); */
+
+       /*  
+        filter: grayscale(100%);
+        filter: sepia(100%); 
+      */
       
+    }
+    input[type="text"] {
+        background: rgba(0,0,0, 0.3);
+        backdrop-filter: blur(1px);
+        color: whitesmoke;
+    }
+    input[type="text"]:focus {
+        background: rgba(0,0,0, 0.8);
+        backdrop-filter: blur(1px);
+          color: whitesmoke;
     }
 
 
@@ -62,10 +76,10 @@
             <div class="col-12 col-md-6 col-lg-6">
                <div class="form">
                  <form >
-                     <label for="" class="form-label">first name</label>
+                     <label for="" class="form-label">First Name</label>
                      <input type="text" class="form-control">
 
-                     <label for="" class="form-label mt-4">first name</label>
+                     <label for="" class="form-label mt-5">Last Name</label>
                      <input type="text" class="form-control">
 
                      <div class="form-btn text-center">
