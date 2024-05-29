@@ -27,7 +27,7 @@
     }
 
     body {
-        background: #080710 url("../img/login/login-bg-3.jpeg") no-repeat;
+        background: #080710 url("../img/login/login-bg-5.jpeg") no-repeat;
         background-size: cover;
         height: 100vh;
         text-align: left;
@@ -59,25 +59,39 @@
     .form::before {
         content: "";
         position: absolute;
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         top: 0;
         left: 0;
         transform: translate(-50%, -50%);
         z-index: 0;
 
-
-
         background: #1CD8D2;
         background: -webkit-linear-gradient(to right, #93EDC7, #1CD8D2);
         background: linear-gradient(to right, #93EDC7, #1CD8D2);
-        
-        opacity: .5;
-        filter: blur(5px);
-    
-    
 
+        opacity: .5;
+        filter: blur(25px);
+    }
+
+    .form::after {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        bottom: 0;
+        right: 0;
+        transform: translate(50%, 50%);
+        z-index: 0;
+
+        background: #FF512F;
+        background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
+        background: linear-gradient(to right, #DD2476, #FF512F);
+
+        opacity: .5;
+        filter: blur(25px);
     }
 
     input[type="text"] {
