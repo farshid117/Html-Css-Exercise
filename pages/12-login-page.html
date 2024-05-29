@@ -27,6 +27,7 @@
     }
 
     body {
+        /*correct image name:login-bg-3.jpeg */
         background: #080710 url("../img/login/login-bg-5.jpeg") no-repeat;
         background-size: cover;
         height: 100vh;
@@ -38,7 +39,7 @@
         color: #fff;
     }
 
-    .form {
+    .form-wrapper {
         position: relative;
         padding: 50px 35px 35px 35px;
         border-radius: 10px;
@@ -55,8 +56,9 @@
       */
 
     }
+    
 
-    .form::before {
+    form::before {
         content: "";
         position: absolute;
         width: 150px;
@@ -65,17 +67,16 @@
         top: 0;
         left: 0;
         transform: translate(-50%, -50%);
-        z-index: 0;
 
         background: #1CD8D2;
         background: -webkit-linear-gradient(to right, #93EDC7, #1CD8D2);
         background: linear-gradient(to right, #93EDC7, #1CD8D2);
 
         opacity: .5;
-        filter: blur(25px);
+        /* filter: blur(25px); */
     }
 
-    .form::after {
+    form::after {
         content: "";
         position: absolute;
         width: 150px;
@@ -84,11 +85,10 @@
         bottom: 0;
         right: 0;
         transform: translate(50%, 50%);
-        z-index: 0;
 
         background: #FF512F;
-        background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
         background: linear-gradient(to right, #DD2476, #FF512F);
+        background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
 
         opacity: .5;
         filter: blur(25px);
@@ -120,7 +120,7 @@
     <div class="container h-100 ">
         <div class="row justify-content-center align-items-center">
             <div class="col-12 col-md-6 col-lg-6">
-                <div class="form">
+                <div class="form-wrapper">
                     <form>
                         <label for="" class="form-label">First Name</label>
                         <input type="text" class="form-control">
