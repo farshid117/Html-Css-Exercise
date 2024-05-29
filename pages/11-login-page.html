@@ -27,39 +27,70 @@
     }
 
     body {
-        background:#080710 url("../img/login/login-bg-3.jpeg") no-repeat;
+        background: #080710 url("../img/login/login-bg-3.jpeg") no-repeat;
         background-size: cover;
         height: 100vh;
         text-align: left;
-        
+
     }
-    .form-label{
+
+    .form-label {
         color: #fff;
     }
-    .form{
-       
+
+    .form {
+        position: relative;
         padding: 50px 35px 35px 35px;
         border-radius: 10px;
         background-color: rgba(255, 255, 255, 0.13);
         border: 1px solid rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(5px);
-        box-shadow: 0px 4px 6px rgba(0,0,0, 0.1);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
-       /*  
+        z-index: 10;
+
+        /*  
         filter: grayscale(100%);
         filter: sepia(100%); 
       */
-      
+
     }
+
+    .form::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+
+
+
+        background: #1CD8D2;
+        background: -webkit-linear-gradient(to right, #93EDC7, #1CD8D2);
+        background: linear-gradient(to right, #93EDC7, #1CD8D2);
+        
+        opacity: .5;
+        filter: blur(5px);
+    
+    
+
+    }
+
     input[type="text"] {
-        background: rgba(0,0,0, 0.3);
+        background: rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(1px);
         color: whitesmoke;
+        transition: background .3s
     }
+
     input[type="text"]:focus {
-        background: rgba(0,0,0, 0.8);
+        background: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(1px);
-          color: whitesmoke;
+        color: whitesmoke;
     }
 
 
@@ -70,29 +101,30 @@
 </style>
 
 <!-- //todo: body -->
+
 <body class="">
     <div class="container h-100 ">
         <div class="row justify-content-center align-items-center">
             <div class="col-12 col-md-6 col-lg-6">
-               <div class="form">
-                 <form >
-                     <label for="" class="form-label">First Name</label>
-                     <input type="text" class="form-control">
+                <div class="form">
+                    <form>
+                        <label for="" class="form-label">First Name</label>
+                        <input type="text" class="form-control">
 
-                     <label for="" class="form-label mt-5">Last Name</label>
-                     <input type="text" class="form-control">
+                        <label for="" class="form-label mt-5">Last Name</label>
+                        <input type="text" class="form-control">
 
-                     <div class="form-btn text-center">
-                        <button class="btn btn-primary mt-5"> Login </button>
-                     </div>
-                 </form>
-               </div>
+                        <div class="form-btn text-center">
+                            <button class="btn btn-primary mt-5"> Login </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 
 
-  <!--   <div align="center" class="return mt-5">
+    <!--   <div align="center" class="return mt-5">
         <a href="/" class="button button__danger">بازگشت</a>
     </div> -->
 </body>
