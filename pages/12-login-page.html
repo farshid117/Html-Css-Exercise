@@ -119,29 +119,73 @@
     }
 
     .user__profile_btn {
-        position: absolute;
-        top: 20px;
-        left: 0;
-        display: flex;
-        align-items: center;
+        margin-top: 20px;
     }
-   
+
     .chvron svg {
         margin-left: 10px;
         width: 20px;
-         transition: .3s;
+        transition: .3s;
     }
-     .chvron:hover svg{
+
+    .user__profile_btn.show .chvron svg {
         transform: rotate(180deg)
-     } 
+    }
+
+    /* dorpdown Menu */
+    .dropdown {
+        position: absolute;
+        left: 0;
+        top: 55px;
+        width: 130px;
+        height: auto;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 5px;
+        background: whitesmoke;
+        transition: .3s;
+        display: none;
+        z-index: -1;
+    }
+
+    .user__profile_btn.show + .dropdown.show {
+        display: block;
+    }
+
+    .dorpdown__list {
+        width: 100%;
+        padding-right: 0 !important;
+        margin-bottom: 0 !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dropdown__item {
+        padding: 5px;
+        cursor: pointer!important;
+       
+    }
+
+    .dropdown__item:not(.last-item) {
+        border-bottom: 1px solid #d5d5d5;
+
+    }
+
+    .dropdown__item .dropdown__link {
+        display: block;
+        color: #000;
+        font-size: 17px;
+        text-align: center;
+        cursor: pointer !important;
+    }
 </style>
 
 <!-- //todo: body -->
 
 <body class="">
-    <div class="container h-100 ">
-        <div class="user__profile">
-            <button class="btn btn-primary user__profile_btn">
+    <div class="container h-100">
+        <div class="user__profile ">
+            <button class="btn btn-primary user__profile_btn  ">
                 <span class="chvron">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
@@ -150,6 +194,16 @@
                 </span>
                 user profile
             </button>
+            <div class="dropdown show">
+
+                <ul class="dropdown__List ps-0 mb-0">
+                    <li class="dropdown__item "><a href="#" class="dropdown__link">Bascket</a></li>
+                    <li class="dropdown__item"><a href="#" class="dropdown__link">Courses</a></li>
+                    <li class="dropdown__item"><a href="#" class="dropdown__link">Account</a></li>
+                    <li class="dropdown__item last-item"><a href="#" class="dropdown__link">Logout</a></li>
+                </ul>
+
+            </div>
         </div>
         <div class="row justify-content-center align-items-center">
             <div class="col-12 col-md-6 col-lg-6">
@@ -168,6 +222,16 @@
                 </div>
             </div>
         </div>
+        <div class="">
+
+            <ul class=" bg-info">
+                <li class=" bg-warning"><a href="#" class="">Bascket</a></li>
+                <li class=""><a href="#" class="">Courses</a></li>
+                <li class=""><a href="#" class="">Account</a></li>
+                <li class=" bg-warning "><a href="#" class="">Logout</a></li>
+            </ul>
+
+        </div>
     </div>
 
 
@@ -178,7 +242,10 @@
 
 <!-- //todo: jsvascript -->
 <script>
-
+const dropdownBtn = document.querySelector(".user__profile_btn")
+    dropdownBtn.addEventListener("click",()=>{
+        dropdownBtn.classList.toggle("show")
+    })
 </script>
 
 </html>
