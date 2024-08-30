@@ -63,7 +63,7 @@ a {
 }
 
 
-/* header-top style */
+/* todo:  header-top style */
 
 .header_top {
     display: flex;
@@ -81,9 +81,9 @@ a {
     margin-right: 1.5rem;
 }
 
-.menu {
+.nav_menu {
     list-style: none;
-    padding-inline-start: 0;
+    padding-left: 0;
     margin: 0;
     display: flex;
 }
