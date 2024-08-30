@@ -42,7 +42,7 @@ a {
     text-decoration: none;
 }
 
-/* utilities */
+/* todo:  utilities */
 .container {
     max-width: 80rem;
     margin-right: auto;
@@ -67,8 +67,8 @@ a {
 
 .header_top {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 0;
 }
 
@@ -97,7 +97,7 @@ a {
     padding: 0 1rem;
 }
 
-/* header-bottom style */
+/* todo: header-bottom style */
 .header_content {
  margin-bottom: 8rem;
 }
