@@ -52,6 +52,7 @@ a {
 }
 
 .btn {
+    
     background-color: #0050c8;
     padding: .8rem 1.2rem;
     border-radius: .5rem;
@@ -98,51 +99,50 @@ a {
 }
 
 /* todo: header-bottom style */
-.header_content {
- margin-bottom: 8rem;
+.header_bottom {
+    margin: 4rem 0;
 }
-.row {
+
+.header-content {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
 
-.header_content__right {
+.header-content_right {
     flex-basis: 50%;
 }
 
-.header_content__right_img {
+.header-content_right__img {
     width: 100%;
     object-fit: cover;
 }
 
-.header_content__left {
+.header-content_left {
     flex-basis: 50%;
 }
 
-.header_content__left_wraper {
+.header-content_left__wraper {
     max-width: 28rem;
 }
 
-.header_content__title {
+.header-content__title {
     font-family: "TTNorms Medium";
     color: #081d43;
     font-weight: normal;
 }
 
-.header_content__text {
+.header-content__text {
     color: #6c7890;
     line-height: 1.5rem;
 }
 
-.header_content__left_btn {
+.header-content_left__btns {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-top: 2rem;
 }
-
-
 
 
 
