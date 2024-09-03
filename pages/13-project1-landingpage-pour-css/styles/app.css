@@ -212,9 +212,17 @@ a {
     margin-bottom: 3rem;
 }
 
+.comments-container {
+    max-width: 63rem;
+    margin: 0 auto;
+    min-height: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .comments {
     display: flex;
-    justify-content: center;
 
 }
 
@@ -225,8 +233,7 @@ a {
     padding: 1.5rem 2rem;
     display: flex;
     flex-direction: column;
-    height: 15rem;
-    width:19rem;
+    min-height: 18rem;
     justify-content: space-between;
 }
 
@@ -250,6 +257,11 @@ a {
 
 .comment__person {
     color: #000;
+}
+
+.companies {
+    display: flex;
+    justify-content: space-between;
 }
 
 
