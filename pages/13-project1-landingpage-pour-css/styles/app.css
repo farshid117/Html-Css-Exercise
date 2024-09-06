@@ -24,20 +24,20 @@
 
 html {
     box-sizing: border-box;
+    width:100vw;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
     list-style: none;
     padding: 0;
-    margin: 0;
-
 }
 
 body {
     font-family: "TTNorms";
+    margin: 0;
 }
 
 a {
@@ -75,7 +75,7 @@ a {
     padding: 1rem 0;
 }
 
-.nav {
+.nav-header {
     display: flex;
     align-items: center;
 }
@@ -195,7 +195,7 @@ a {
 /* todo: Person Comments */
 .person-comments {
     background-color: #2f5bea;
-    padding: 5rem 0;
+    padding: 5rem 0 1rem;
     color: #fff;
     text-align: center;
 }
@@ -207,61 +207,75 @@ a {
     margin-bottom: 1.2rem;
 }
 
-.person-comments-text {
+.person-comments_text {
     font-family: "TTNorms Light";
     margin-bottom: 3rem;
 }
 
 .comments-container {
-    max-width: 63rem;
-    margin: 0 auto;
-    min-height: 23rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    max-width: 65rem;
+    margin: 3.5rem auto;
+
 }
 
 .comments {
+    /* flex-container */
     display: flex;
+    justify-content: space-between;
 
 }
 
 .comment {
+    /* flex-item -> comments & flex-container for child */
     background: #fff;
-    border-radius: .3rem;
-    margin: 0 1rem;
-    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     min-height: 18rem;
     justify-content: space-between;
+    flex-basis: 20rem;
+}
+
+.comment_content {
+    /* flex-item -> comment */
+    padding: 1.2rem;
+    text-align: left;
 }
 
 .comment__text {
     font-family: "Times Roman Italic";
     color: #7e8085;
     line-height: 1.5rem;
-    text-align: left;
+    margin: 0;
 }
 
 .comment_info {
+    /* flex-item -> comment */
     display: flex;
     align-items: center;
     border-top: 1px solid #e8ebef;
-    padding-top: 1.2rem;
+    padding: 0.8rem 1.2rem;
 }
 
-.comment__img {
-    margin-right: .5rem;
-}
+.comment__img {}
 
 .comment__person {
     color: #000;
+    margin: 0 0 0 .5rem;
 }
 
 .companies {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5rem 0 3rem;
+}
+
+.companies_img {
+    display: block;
+    margin: 1rem;
 }
 
 
@@ -288,6 +302,7 @@ a {
     .container {
         max-width: 960px;
     }
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -306,4 +321,6 @@ a {
     .container {
         max-width: 100%;
     }
+
+  
 }
