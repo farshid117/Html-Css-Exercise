@@ -159,7 +159,7 @@ a {
 
 /* todo: Main-Work Section */
 .main {
-    padding: 3rem 0;
+    padding: 3rem 0 0 0;
 }
 
 .works {
@@ -355,7 +355,8 @@ a {
     border-radius: .5rem;
 }
 .copy-right{
-    color:#6c7890
+    color:#6c7890;
+    padding : 1rem 0
 }
 
 .copy-right_wrapper {
