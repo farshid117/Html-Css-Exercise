@@ -323,9 +323,21 @@ a {
 
 .newsletter_text {}
 
-.newsletter_email {}
+.newsletter_email {
+    background: #fff;
+    flex-basis: 18rem;
+    display: flex;
+    justify-content: space-between;
+    padding: .4rem;
+   
+}
 
-.newsletter__txt {}
+.newsletter__txt {
+    border: none;
+    outline: none;
+    flex-basis: 12rem;
+    padding: 0 .5rem;
+}
 
 .newsletter__btn {
     background: #2f5bea;
