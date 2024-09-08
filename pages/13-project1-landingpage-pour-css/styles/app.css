@@ -361,6 +361,7 @@ a {
 .copy-right_wrapper {
     display: flex;
     justify-content: space-between;
+    align-items:center;
 }
 
 .copy-right_text {}
