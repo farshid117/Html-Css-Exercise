@@ -309,20 +309,34 @@ a {
 
 /* todo: Footer section */
 .newsletter {
-    background: #2c57e4;
+    background: #c2cef5;
     padding: 3rem 0;
     color: #fff;
 }
-.newletter_wraper{
-    display:flex;
+
+.newletter_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
+
 .newsletter_text {}
 
 .newsletter_email {}
 
 .newsletter__txt {}
 
-.newsletter__btn {}
+.newsletter__btn {
+    background: #2f5bea;
+    border: none;
+    outline: none;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+}
 
 
 
