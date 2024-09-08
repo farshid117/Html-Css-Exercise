@@ -304,10 +304,25 @@ a {
 
 .portfolio__img {
     width: 100%;
+    height: 100%;
 }
 
 /* todo: Footer section */
+.newsletter {
+    background: #2c57e4;
+    padding: 3rem 0;
+    color: #fff;
+}
+.newletter_wraper{
+    display:flex;
+}
+.newsletter_text {}
 
+.newsletter_email {}
+
+.newsletter__txt {}
+
+.newsletter__btn {}
 
 
 
