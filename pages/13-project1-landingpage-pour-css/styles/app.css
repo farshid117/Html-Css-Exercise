@@ -354,6 +354,16 @@ a {
     align-items: center;
     border-radius: .5rem;
 }
+.copy-right{
+    color:#6c7890
+}
+
+.copy-right_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy-right_text {}
 
 
 
