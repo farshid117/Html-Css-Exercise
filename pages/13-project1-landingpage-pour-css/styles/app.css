@@ -281,27 +281,32 @@ a {
 
 /* todo : portfolio section */
 
-.portfolio{
-    text-align:center;
-    padding: 2rem 0 ;
+.portfolio {
+    text-align: center;
+    padding: 2rem 0;
 }
-.portfolio-items{
+
+.portfolio-items {
     display: flex;
-    justify-content: space-evenly;;
-    flex-wrap:wrap;
-    gap :2rem;
+    justify-content: space-evenly;
+    ;
+    flex-wrap: wrap;
+    gap: 2rem;
     margin-top: 3rem;
-    
+
 }
-.portfolio__item{
+
+.portfolio__item {
     flex-basis: 23rem;
     border-radius: 1rem;
-    overflow:hidden;
+    overflow: hidden;
 }
-.portfolio__img{
+
+.portfolio__img {
     width: 100%;
 }
 
+/* todo: Footer section */
 
 
 
