@@ -309,8 +309,8 @@ a {
 
 /* todo: Footer section */
 .newsletter {
-    background: #c2cef5;
-    padding: 3rem 0;
+    background: #2c57e4;
+    padding: 4.5rem 0;
     color: #fff;
 }
 
@@ -321,22 +321,27 @@ a {
 
 }
 
-.newsletter_text {}
+.newsletter_text {
+    font-size: 1.6rem;
+}
 
 .newsletter_email {
     background: #fff;
     flex-basis: 18rem;
     display: flex;
     justify-content: space-between;
-    padding: .4rem;
-   
+    align-items: center;
+    padding: .4rem .4rem .4rem 1.5rem;
+    border-radius: .5rem;
+
 }
 
 .newsletter__txt {
     border: none;
     outline: none;
     flex-basis: 12rem;
-    padding: 0 .5rem;
+
+
 }
 
 .newsletter__btn {
