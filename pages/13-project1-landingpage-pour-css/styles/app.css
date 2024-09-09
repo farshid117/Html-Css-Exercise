@@ -138,26 +138,27 @@ section:not(.header-top, .newsletter, .copy-right) {
     object-fit: cover;
 }
 
-.header-content_left {
+.header-bottom_left {
     flex-basis: 50%;
 }
 
-.header-content_left__wraper {
-    max-width: 28rem;
+.header-bottom_left__wraper {
+    max-width: 27rem;
 }
 
-.header-content__title {
+.header-bottom__title {
     font-family: "TTNorms Medium";
     color: #081d43;
     font-weight: normal;
+    font-size: 1.9rem;
 }
 
-.header-content__text {
+.header-bottom__text {
     color: #6c7890;
     line-height: 2rem;
 }
 
-.header-content_left__btns {
+.header-bottom__links {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -409,6 +410,9 @@ section:not(.header-top, .newsletter, .copy-right) {
     .container {
         max-width: 540px;
     }
+   /*  .row{
+        flex-direction: column;
+    } */
 }
 
 @media only screen and (max-width: 576px) {
