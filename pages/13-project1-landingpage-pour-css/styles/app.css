@@ -111,11 +111,11 @@ section:not(.header_top, .newsletter, .copy-right) {
     display: flex;
 }
 
-.menu_item__link, .header_link {
+.menu__link, .header_link {
     text-decoration: none;
 }
 
-.menu_item__link {
+.menu__link {
     color: #081d43;
     padding: 0 1rem;
 }
