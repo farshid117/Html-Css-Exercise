@@ -45,7 +45,7 @@ a {
     text-decoration: none;
 }
 
-section:not(.header_top, .newsletter, .copy-right) {
+section:not(.header-top, .newsletter, .copy-right) {
     padding: 5rem
 }
 
@@ -123,17 +123,17 @@ section:not(.header_top, .newsletter, .copy-right) {
 /* todo: header-bottom style */
 /* .header-bottom {} */
 
-.row{
+.row {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
 
-.header-content_right {
+.header-bottom_right {
     flex-basis: 50%;
 }
 
-.header-content_right__img {
+.header-bottom__img {
     width: 100%;
     object-fit: cover;
 }
