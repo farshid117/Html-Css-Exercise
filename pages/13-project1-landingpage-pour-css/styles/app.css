@@ -95,7 +95,7 @@ section:not(.header_top, .newsletter, .copy-right) {
     align-items: center;
 }
 
-.nav-header {
+.nav {
     display: flex;
     align-items: center;
 }
@@ -104,7 +104,7 @@ section:not(.header_top, .newsletter, .copy-right) {
     margin-right: 1.5rem;
 }
 
-.nav_menu {
+.menu {
     list-style: none;
     padding-left: 0;
     margin: 0;
@@ -121,7 +121,7 @@ section:not(.header_top, .newsletter, .copy-right) {
 }
 
 /* todo: header-bottom style */
-.header_bottom {}
+/* .header_bottom {} */
 
 .header-content {
     display: flex;
@@ -269,7 +269,7 @@ section:not(.header_top, .newsletter, .copy-right) {
     padding: 0.8rem 1.2rem;
 }
 
-.comment__img {}
+/* .comment__img {} */
 
 .comment__person {
     color: #000;
@@ -375,7 +375,7 @@ section:not(.header_top, .newsletter, .copy-right) {
     align-items: center;
 }
 
-.copy-right_text {}
+/* .copy-right_text {} */
 
 
 
