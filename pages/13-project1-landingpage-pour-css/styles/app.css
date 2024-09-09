@@ -38,6 +38,7 @@ html {
 body {
     font-family: "TTNorms";
     margin: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -74,6 +75,7 @@ section:not(.header_top, .newsletter, .copy-right) {
     margin-bottom: 0;
     text-transform: uppercase;
     margin-top: 0;
+    font-size: 1.3rem;
 }
 
 .section_title {
@@ -163,7 +165,9 @@ section:not(.header_top, .newsletter, .copy-right) {
 }
 
 /* todo: Main-Work Section */
-.main {}
+.main {
+    padding-top: 2rem;
+}
 
 .works {
     text-align: center;
@@ -208,11 +212,15 @@ section:not(.header_top, .newsletter, .copy-right) {
     font-weight: normal;
     margin-bottom: 1.2rem;
     margin-top: 0;
+    font-size: 1.8rem;
 }
 
 .person-comments_text {
     font-family: "TTNorms Light";
     margin-bottom: 3rem;
+    max-width: 27rem;
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
 .comments-container {
@@ -312,7 +320,7 @@ section:not(.header_top, .newsletter, .copy-right) {
 /* todo: Footer section */
 .newsletter {
     background: #2c57e4;
-    padding: 4.5rem 0;
+    padding: 6.5rem 0;
     color: #fff;
 }
 
