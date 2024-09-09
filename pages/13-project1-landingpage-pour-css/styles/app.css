@@ -111,7 +111,7 @@ section:not(.header_top, .newsletter, .copy-right) {
     display: flex;
 }
 
-.menu_item__link, .contact__btn {
+.menu_item__link, .header_link {
     text-decoration: none;
 }
 
