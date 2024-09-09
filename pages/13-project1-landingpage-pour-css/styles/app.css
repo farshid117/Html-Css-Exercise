@@ -89,7 +89,7 @@ section:not(.header_top, .newsletter, .copy-right) {
     margin-top: 1.5rem;
 }
 
-.header_top {
+.header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,9 +121,9 @@ section:not(.header_top, .newsletter, .copy-right) {
 }
 
 /* todo: header-bottom style */
-/* .header_bottom {} */
+/* .header-bottom {} */
 
-.header-content {
+.row{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
