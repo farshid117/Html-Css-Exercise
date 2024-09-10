@@ -449,7 +449,7 @@ section:not(.header-top, .newsletter, .copy-right) {
         color: #fff;
 
     }
-    ..menu__link{
+    .menu__link{
         color: #fff;
     }
 
