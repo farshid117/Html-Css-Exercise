@@ -111,8 +111,6 @@ section:not(.header-top, .newsletter, .copy-right) {
     display: flex;
 }
 
-.menu_item {}
-
 .menu__link {
     color: #081d43;
     padding: 0 1rem;
