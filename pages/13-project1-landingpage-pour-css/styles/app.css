@@ -474,7 +474,6 @@ section:not(.header-top, .newsletter, .copy-right) {
     }
 
     /* todo: header-bottom */
-
     .row {
         flex-direction: column;
     }
@@ -511,7 +510,7 @@ section:not(.header-top, .newsletter, .copy-right) {
     .header-bottom__text {
         font-size: .8rem;
     }
-
+   /* todo: comments-responsive */
     .section_title {
         font-size: 1.2rem;
     }
