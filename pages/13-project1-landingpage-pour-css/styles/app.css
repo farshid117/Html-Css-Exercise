@@ -46,7 +46,7 @@ a {
 }
 
 section:not(.header-top, .newsletter, .copy-right) {
-    padding: 5rem
+    padding: 5rem 0;
 }
 
 /* todo:  utilities */
@@ -187,6 +187,12 @@ section:not(.header-top, .newsletter, .copy-right) {
     margin-bottom: 3rem;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.works-content_item {
+    background: #fafafa;
 }
 
 .works-content__title {
@@ -241,8 +247,8 @@ section:not(.header-top, .newsletter, .copy-right) {
 .comments {
     /* flex-container */
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .comment {
@@ -254,7 +260,7 @@ section:not(.header-top, .newsletter, .copy-right) {
     flex-direction: column;
     min-height: 18rem;
     justify-content: space-between;
-    flex-basis: 20rem;
+    flex-basis: 18rem;
 }
 
 .comment_content {
@@ -419,10 +425,17 @@ section:not(.header-top, .newsletter, .copy-right) {
 }
 
 @media only screen and (max-width: 768px) {
+
+    /* todo: Utilities */
     .container {
         max-width: 540px;
     }
 
+    section:not(.header-top, .newsletter, .copy-right) {
+        padding: 2rem 0;
+    }
+
+    /* todo: header-top */
     .header_icon {
         display: block;
     }
@@ -447,7 +460,8 @@ section:not(.header-top, .newsletter, .copy-right) {
         color: #fff;
 
     }
-    .menu__link{
+
+    .menu__link {
         color: #fff;
     }
 
@@ -458,6 +472,31 @@ section:not(.header-top, .newsletter, .copy-right) {
     .header_icon i {
         transition: .4s;
     }
+
+    /* todo: header-bottom */
+
+    .row {
+        flex-direction: column;
+    }
+
+    .header {
+        margin-top: 0.5rem;
+    }
+
+    .header-bottom__title {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .header-bottom__text {
+        text-align: center;
+    }
+
+    .header-bottom__links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
 }
 
 @media only screen and (max-width: 576px) {
@@ -465,5 +504,23 @@ section:not(.header-top, .newsletter, .copy-right) {
         max-width: 100%;
     }
 
+    .header-bottom__title {
+        font-size: 1.1rem;
+    }
 
+    .header-bottom__text {
+        font-size: .8rem;
+    }
+
+    .section_title {
+        font-size: 1.2rem;
+    }
+
+    .person-coments_title {
+        font-size: 1.5rem;
+    }
+
+    .person-comments_text {
+        font-size: 0.8rem;
+    }
 }
