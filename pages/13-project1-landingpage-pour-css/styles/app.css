@@ -293,7 +293,7 @@ section:not(.header-top, .newsletter, .copy-right) {
 
 .companies {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 5rem 0 3rem;
@@ -412,6 +412,16 @@ section:not(.header-top, .newsletter, .copy-right) {
         max-width: 960px;
     }
 
+    /* todo: comments section */
+    .comment {
+        flex-basis: 17rem;
+    }
+
+    /* todo: companies section */
+    .companies {
+        margin: 2rem -5px 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -421,6 +431,16 @@ section:not(.header-top, .newsletter, .copy-right) {
 
     .header_link {
         display: none;
+    }
+
+    /* todo: comments section */
+    .comment {
+        flex-basis: 18rem;
+    }
+
+    /* todo: companies section */
+    .companies {
+        margin: 2rem 30px -2rem;
     }
 }
 
@@ -496,6 +516,15 @@ section:not(.header-top, .newsletter, .copy-right) {
         flex-wrap: wrap;
     }
 
+    /* todo: comments section */
+    .comment {
+        flex-basis: 13.8rem;
+    }
+
+    /* todo:  section */
+    .companies {
+        margin: 2rem 0px 1rem;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -510,7 +539,8 @@ section:not(.header-top, .newsletter, .copy-right) {
     .header-bottom__text {
         font-size: .8rem;
     }
-   /* todo: comments-responsive */
+
+    /* todo: comments-responsive */
     .section_title {
         font-size: 1.2rem;
     }
@@ -521,5 +551,16 @@ section:not(.header-top, .newsletter, .copy-right) {
 
     .person-comments_text {
         font-size: 0.8rem;
+    }
+
+    /* todo: comments section */
+    .comment {
+        flex-basis: 20rem;
+    }
+
+    /* todo: companies section */
+    .companies {
+        justify-content: center;
+        margin: 1rem 0px 1rem;
     }
 }
