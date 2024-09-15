@@ -358,6 +358,7 @@ section:not(.header-top, .newsletter, .copy-right) {
   border: none;
   outline: none;
   flex-basis: 12rem;
+  width: 100%;
 }
 
 .newsletter__btn {
@@ -586,6 +587,9 @@ section:not(.header-top, .newsletter, .copy-right) {
 }
   .newsletter_email{
     flex-basis: auto;
+  }
+  .newsletter__btn{
+    padding: .6rem 1.2rem;
   }
   .copy-right_wrapper{
     flex-direction: column;
