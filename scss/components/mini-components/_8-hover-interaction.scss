@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8"> <!-- for show farsi text in Linux Server -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="کلمات کلیدی پروژه برای بالابردن سئو" />
+    <meta name="description" content="توضیحی از پروژه" />
+    <meta name="outher" content="مهندس علیرضا خیاطپور" />
+
+    <link rel="icon" href="../img/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>selectors</title>
+</head>
+<!-- //todo: style -->
+<style>
+    .bg-primary-subtle {
+        background-color: #E91E63 !important;
+    }
+
+    .one {
+        color: #fff
+    }
+
+    .title {
+        text-shadow: 2px 1px 3px #2196f3;
+        box-shadow: 8px 7px 0px #2196f3, 15px 14px 0px #6af16a;
+        font-family: "Georgia"
+    }
+    div.text h2{  /* Merge selector: descendant selector with concat selector */
+        color: blue ;
+        font-size: 24px;
+        font-weight: bold;
+        direction: rtl;
+        text-align: right;
+    }
+    a[class="three"]{ /* Attribute selector*/
+        color: #22a60e;
+    }
+    a[class="three"]:visited{
+        color: #c7e408;
+    }
+    a[class="three"]:hover{ /* َAttribute Selector with pseudo selector */
+        background: #2f043f;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    p.box{  /* specificity */
+        color: #34e408;
+    }
+    div.text h2 + p{ /* Merg selector: descendant selector with concat selector */
+        text-align: right;
+        color: #002543;
+        font-size: 1.5rem;
+        text-shadow: 2px 2px 5px #2196f3;
+    }
+    img.my-img{ /* cacat selector */
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        border:  5px solid #fff;
+        outline: 5px solid #29e408;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: .5s;
+        cursor: pointer;
+    }
+    img.my-img:hover{
+        animation: scale(.8);
+    }
+    .accent{
+        direction: ltr;
+        text-align: left;
+        padding: 20px 20px ;
+        background-color: #add8fc;
+    }
+    .accent h2, .accent h3{
+        font-weight: bold;
+    }
+    .accent input[type="checkbox"], .accent input[type="radio"]{
+        accent-color: red;
+    }
+    .accent input[type="range"]{
+        accent-color: green;
+    }
+    .accent progress{
+        accent-color: violet;
+    }
+</style>
+<!-- //todo: body -->
+
+<body>
+    <div class="card bg-primary-subtle w-75 my-5 m-auto p-5">
+        <div class="card-body fw-bold fs-5 text-end" dir="ltr">
+            <h2 class="fw-bold  p-4 rounded-4 bg-warning title mb-5">Page Title</h2>
+            <p class="one box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magni aut, et impedit
+                consectetur ea
+                nostrum
+                officiis, fugiat magnam fugit pariatur possimus? Sint dolorum quo iusto non, labore architecto id!
+            </p>
+            <div class="text">
+                <p class="box" id="box">تو اگه چشات مشکی باشه مشکی قشنگه &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; تو اگه هرچی بپوشی که قشنگه</>
+                <h2>گشته ام در جهان و آخر کار &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;دلبری برگزیده ام که نپرس</h2>
+                <p>پیش تو همه‌ی آرزوهام خاطره میشن &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; باتو دیوونه‌تر از همین الان و همیشم</p>
+            </div>
+            <span class="text-black">letter-spacing :</span>
+            <p class="two box">Lorem ipsum dolor</p>
+            <a href="#" class="three">Lorem ipsum dolor</a>
+
+        </div>
+       <div class="aks">
+         <img src="../img/khodam.png" class="my-img"  alt="khodam" >
+       </div>
+    </div>
+    <div class="accent">
+        <h2>The accent-color Property</h2>
+        
+        <h3>Accent color for checkboxes:</h3>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked>
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" checked>
+        <label for="vehicle2"> I have a car</label><br><br>
+        
+        <h3>Accent color for radiobuttons:</h3>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS" checked>
+        <label for="css">CSS</label><br>
+        
+        <h3>Accent color for a range field:</h3>
+        <label for="vol">Volume:</label>
+        <input type="range" id="vol" name="vol" min="0" max="50">
+        
+        <h3>Accent color for a progress element:</h3>
+        <label for="file">Downloading progress:</label>
+        <progress id="file" value="35" max="100">35% </progress>
+
+    </div>
+
+
+    <div align="center" class="return">
+        <a href="/" class="button button__danger">بازگشت</a>
+    </div>
+</body>
+
+<!-- //todo: jsvascript -->
+<script>
+
+</script>
+
+</html>
