@@ -1,4 +1,5 @@
 @import "configs/variables"; 
+@import "configs/fonts";
 @import "base/base";
 @import "layout/layout";
 
@@ -8,7 +9,9 @@
 @import "components/backgroundExa";
 @import "components/mediaqueries";
 
+/* todo: Mega-Menu-Compenent styles  */
 @import "components/mini-components/1-mega-menu";
+/* todo: cart-component styles  */
 @import "components/mini-components/2-cart";
 @import "components/mini-components/3-sidebar";
 @import "components/mini-components/4-gallery";
