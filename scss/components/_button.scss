@@ -3,9 +3,11 @@
   display: inline-block; /* for use into <a> and can get width & height  */
   background: var(--primary-color);
   color: var(--container-color);
-  padding: 0.75rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   border-radius: 3rem;
   transition: .4s;
+  font-family: "Vazir-Medium ", sans-serif;
+  font-size: 1.2rem;
   
   &:hover {
     background: var(--container-color);
