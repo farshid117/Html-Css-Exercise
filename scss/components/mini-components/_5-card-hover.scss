@@ -1,12 +1,13 @@
 /* todo: 5-change-style Component */
-#change-style {
+#card-hover {
   font-family: "YekanBakh";
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  line-height: 1.5;
 }
-.change-style-card {
+.card-hover {
   width: 592px;
   height: 424px;
   background-image: url("../img/mini-projects/5-card-hover-component/card.png");
@@ -14,16 +15,18 @@
   position: relative;
   overflow: hidden;
 
-  .icons-wrapper {
+  .card_icons {
     display: flex;
     align-items: center;
     gap: 10px;
-
     position: absolute;
-    top: 20px;
+    top: -68px;
     left: 20px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s;
 
-    .change-card_messages {
+    &__messages {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -36,15 +39,15 @@
       color: #fff;
       cursor: pointer;
 
-      .messages_img {
+      &_img {
         filter: brightness(7);
       }
-      .messages_num {
+      &_num {
         font-size: 18px;
       }
     }
 
-    .change-card_heart {
+    .card_icons__heart {
       width: 48px;
       height: 48px;
       display: flex;
@@ -54,7 +57,7 @@
       background: #c91b4a;
       cursor: pointer;
 
-      .heart_icon {
+      &_icon {
         filter: brightness(7);
       }
     }
@@ -73,7 +76,7 @@
     visibility: hidden;
     transition: 0.4s;
   }
-  .change-text_wrapper {
+  .card_content {
     color: #fff;
     position: absolute;
     bottom: -100%;
@@ -82,19 +85,24 @@
     opacity: 0;
     visibility: hidden;
 
-    .change-text__title {
+    &__title {
       margin-bottom: 1rem;
     }
-    .change-text {
+    &__captions {
     }
   }
 }
-.change-style-card:hover .change-text_wrapper {
+.card-hover:hover .card_content {
   bottom: 27px;
   opacity: 1;
   visibility: visible;
 }
-.change-style-card:hover .overlay {
+.card-hover:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.card-hover:hover .card_icons {
+  top: 20px;
   opacity: 1;
   visibility: visible;
 }
