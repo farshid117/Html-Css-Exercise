@@ -404,42 +404,42 @@ body {
   min-height: 100vh;
 }
 
-.change-card {
+.change-style-card {
   width: 592px;
   height: 424px;
-  background-image: url("../img/mini-projects/5-change-style-component/card.png");
+  background-image: url("../img/mini-projects/5-card-hover-component/card.png");
   border-radius: 12px;
   position: relative;
+  overflow: hidden;
 }
-
-.icons-wrapper {
+.change-style-card .icons-wrapper {
   display: flex;
   align-items: center;
-  justify-content: end;
   gap: 10px;
   position: absolute;
   top: 20px;
   left: 20px;
 }
-.icons-wrapper .change-card_messages {
+.change-style-card .icons-wrapper .change-card_messages {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
   width: 80px;
   height: 48px;
-  background: #1d2939;
   border-radius: 50px;
+  background: #1d2939;
   font-family: "YekanBakh Bold";
   color: #fff;
+  cursor: pointer;
 }
-.icons-wrapper .change-card_messages .messages_img {
+.change-style-card .icons-wrapper .change-card_messages .messages_img {
   filter: brightness(7);
 }
-.icons-wrapper .change-card_messages .messages_num {
+.change-style-card .icons-wrapper .change-card_messages .messages_num {
   font-size: 18px;
 }
-.icons-wrapper .change-card_heart {
+.change-style-card .icons-wrapper .change-card_heart {
   width: 48px;
   height: 48px;
   display: flex;
@@ -447,9 +447,41 @@ body {
   justify-content: center;
   border-radius: 100%;
   background: #c91b4a;
+  cursor: pointer;
 }
-.icons-wrapper .change-card_heart .heart_icon {
+.change-style-card .icons-wrapper .change-card_heart .heart_icon {
   filter: brightness(7);
+}
+.change-style-card .overlay {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgb(0, 0, 0));
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+.change-style-card .change-text_wrapper {
+  color: #fff;
+  position: absolute;
+  bottom: -100%;
+  right: 20px;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+.change-style-card .change-text_wrapper .change-text__title {
+  margin-bottom: 1rem;
+}
+.change-style-card:hover .change-text_wrapper {
+  bottom: 27px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.change-style-card:hover .overlay {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */
