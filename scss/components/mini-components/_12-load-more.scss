@@ -1,1 +1,42 @@
 /* 12-load-more styles */
+.loadmore-body{
+    font-family: "YekanBakh";
+    line-height: 1.5;
+    padding-top: 85px ;
+}
+.loadmore {
+    width: 1008px;
+    margin: 0 auto;
+
+  &__header{
+    text-align: center;
+}
+  &__header_title{
+    font-family: "YekanBakh Heavy";
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+  &__header_img{
+
+}
+  &__content{
+    background-color: #F5F5F5;
+    border-radius: 16px;
+    padding: 24px;
+}
+  &__content_text{
+
+}
+  &__content_shadow{
+
+}
+  &__content_btn{
+
+}
+  &__content_btn-text{
+
+}
+  &__content_btn-icon{
+
+}
+}

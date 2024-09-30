@@ -135,7 +135,7 @@ a {
   text-decoration: none;
 }
 
-/* Main Layout styles */
+/* Main Layout styles(utilities) */
 html {
   scroll-behavior: smooth;
   font-family: "YekanBakh";
@@ -496,6 +496,31 @@ body {
   top: 20px;
   opacity: 1;
   visibility: visible;
+}
+
+/* 12-load-more styles */
+.loadmore-body {
+  font-family: "YekanBakh";
+  line-height: 1.5;
+  padding-top: 85px;
+}
+
+.loadmore {
+  width: 1008px;
+  margin: 0 auto;
+}
+.loadmore__header {
+  text-align: center;
+}
+.loadmore__header_title {
+  font-family: "YekanBakh Heavy";
+  font-size: 30px;
+  margin-bottom: 4px;
+}
+.loadmore__content {
+  background-color: #F5F5F5;
+  border-radius: 16px;
+  padding: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
