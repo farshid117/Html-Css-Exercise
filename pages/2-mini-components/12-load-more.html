@@ -191,7 +191,12 @@
 
 <!-- //todo: jsvascript -->
 <script>
+const btnElm = document.querySelector(".loadmore__content_btn")
+const contentElm = document.querySelector(".loadmore__content")
 
+btnElm.addEventListener("click", () => {
+    contentElm.classList.toggle("show")
+})
 
 </script>
 
