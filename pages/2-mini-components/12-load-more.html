@@ -196,6 +196,11 @@ const contentElm = document.querySelector(".loadmore__content")
 
 btnElm.addEventListener("click", () => {
     contentElm.classList.toggle("show")
+    if(contentElm.classList.contains("show")){
+         btnElm.firstElementChild.innerHTML = "مشاهده کمتر"  
+    }else{
+        btnElm.firstElementChild.innerHTML = "مشاهده بیشتر"      
+    }
 })
 
 </script>
