@@ -31,12 +31,32 @@
 
 }
   &__content_btn{
+    width: 302px;
+    height: 48px;
+    border-radius: 8px;
+    background: #EB5E28 ;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #fff;
+    font: inherit;
 
 }
   &__content_btn-text{
 
 }
   &__content_btn-icon{
+    width: 24px;
+    height: 24px;
+   
+}
+}
+.open-btn{
 
 }
+.close-btn{
+    display: none;
 }

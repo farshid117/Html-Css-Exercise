@@ -522,5 +522,27 @@ body {
   border-radius: 16px;
   padding: 24px;
 }
+.loadmore__content_btn {
+  width: 302px;
+  height: 48px;
+  border-radius: 8px;
+  background: #EB5E28;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: #fff;
+  font: inherit;
+}
+.loadmore__content_btn-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.close-btn {
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
