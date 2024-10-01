@@ -78,6 +78,11 @@
 .loadmore__content.show .loadmore__content_shadow {
   display: none;
 }
+.loadmore__content.show .loadmore__content_btn{
+  background: #FFF;
+  border: 1px solid #eb5e28;
+  color: #eb5e28;
+}
 .loadmore__content.show .close-btn{
     display: block;
 }

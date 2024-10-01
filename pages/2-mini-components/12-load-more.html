@@ -25,22 +25,24 @@
 <body class="loadmore-body">
     <!-- todo: SVG Pack -->
     <svg class="svg-pack d-none">
-        <symbol id="open-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            viewBox="0 0 24 24" fill="none">
+        <symbol id="open-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none">
             <g opacity="0.4">
-                <path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M12 16V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M12 16V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
             </g>
             <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="currentColor"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
         </symbol>
-        <symbol id="close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            viewBox="0 0 24 24" fill="none">
+        <symbol id="close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none">
             <path opacity="0.34" d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
             <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="currentColor"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        </>
+            </>
     </svg>
     <!-- todo: Body of project -->
     <div class="loadmore">
@@ -176,9 +178,12 @@
 
             <button class="loadmore__content_btn" type="button">
                 <span class="loadmore__content_btn-text">مشاهده بیشتر</span>
-                <svg class="loadmore__content_btn-icon open-btn"><use href="#open-icon"></use></svg>
-                <svg class="loadmore__content_btn-icon close-btn"><use href="#close-icon"></use></svg>
-
+                <svg class="loadmore__content_btn-icon open-btn">
+                    <use href="#open-icon"></use>
+                </svg>
+                <svg class="loadmore__content_btn-icon close-btn">
+                    <use href="#close-icon"></use>
+                </svg>
             </button>
         </div>
 
@@ -187,22 +192,21 @@
     <!--   <div align="center" class="return mt-5">
         <a href="/" class="button button__danger">بازگشت</a>
     </div> -->
+    <!-- //todo: jsvascript -->
+    <script>
+        const btnElm = document.querySelector(".loadmore__content_btn")
+        const contentElm = document.querySelector(".loadmore__content")
+
+        btnElm.addEventListener("click", () => {
+            contentElm.classList.toggle("show")
+            if (contentElm.classList.contains("show")) {
+                btnElm.firstElementChild.innerHTML = "مشاهده کمتر"
+            } else {
+                btnElm.firstElementChild.innerHTML = "مشاهده بیشتر"
+            }
+        })
+
+    </script>
 </body>
-
-<!-- //todo: jsvascript -->
-<script>
-const btnElm = document.querySelector(".loadmore__content_btn")
-const contentElm = document.querySelector(".loadmore__content")
-
-btnElm.addEventListener("click", () => {
-    contentElm.classList.toggle("show")
-    if(contentElm.classList.contains("show")){
-         btnElm.firstElementChild.innerHTML = "مشاهده کمتر"  
-    }else{
-        btnElm.firstElementChild.innerHTML = "مشاهده بیشتر"      
-    }
-})
-
-</script>
 
 </html>
