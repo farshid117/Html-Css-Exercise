@@ -567,23 +567,21 @@ body {
 }
 
 .loadmore__content.show .loadmore__content_text::-webkit-scrollbar {
-  appearance: none;
   width: 8px;
-  height: 100%;
-  background: red;
+  background: transparent;
   direction: rtl;
 }
 
 .loadmore__content.show .loadmore__content_text::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
   border-radius: 50px;
-  background: blue;
   transition: 0.4s;
   cursor: pointer;
 }
 
 .loadmore__content.show .loadmore__content_text::-webkit-scrollbar-thumb:hover {
   border-radius: 50px;
-  background: yellow;
+  background: #878787;
 }
 
 .loadmore__content.show .loadmore__content_shadow {
@@ -591,7 +589,7 @@ body {
 }
 
 .loadmore__content.show .loadmore__content_btn {
-  background: #FFF;
+  background: #fff;
   border: 1px solid #eb5e28;
   color: #eb5e28;
 }
