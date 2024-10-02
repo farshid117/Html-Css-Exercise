@@ -21,14 +21,14 @@
   &__content {
     background-color: #f5f5f5;
     border-radius: 16px;
-    padding: 24px;
+    padding: 24px 8px 38px 24px;
     position: relative;
       
   }
   &__content_text {
     height: 288px;
     overflow: hidden;
-    
+
     direction: ltr; /* for scrollbar apeare in right */
     padding-right: 8px;
     text-align: right;
