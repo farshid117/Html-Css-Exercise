@@ -23,7 +23,6 @@
     border-radius: 16px;
     padding: 24px 8px 38px 24px;
     position: relative;
-      
   }
   &__content_text {
     height: 288px;
@@ -62,6 +61,7 @@
     font: inherit;
     margin: 0 auto;
     margin-top: 24px;
+    font-family: "YekanBakh Medium";
   }
   &__content_btn-text {
   }
@@ -77,9 +77,8 @@
 }
 
 .loadmore__content.show .loadmore__content_text {
-  height: 400px;
+  height:400px;
   overflow-y: scroll;
-  
 }
 .loadmore__content.show .loadmore__content_shadow {
   display: none;
