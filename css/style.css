@@ -563,7 +563,27 @@ body {
 
 .loadmore__content.show .loadmore__content_text {
   height: 400px;
-  overflow: auto;
+  overflow-y: scroll;
+}
+
+.loadmore__content.show .loadmore__content_text::-webkit-scrollbar {
+  appearance: none;
+  width: 8px;
+  height: 100%;
+  background: red;
+  direction: rtl;
+}
+
+.loadmore__content.show .loadmore__content_text::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: blue;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.loadmore__content.show .loadmore__content_text::-webkit-scrollbar-thumb:hover {
+  border-radius: 50px;
+  background: yellow;
 }
 
 .loadmore__content.show .loadmore__content_shadow {
