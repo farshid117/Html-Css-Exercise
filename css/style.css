@@ -382,12 +382,18 @@ body {
   }
 }
 /* todo: Mega-Menu-Compenent styles  */
-#mega-body {
-  font-family: "YekanBakh Bold";
+.megamenu-body {
+  font-family: "YekanBakh";
+  line-height: 1.5;
 }
 
-.mega-text {
-  color: #f01616;
+button {
+  font: inherit;
+  border: 0;
+}
+
+.icon-pack {
+  display: none;
 }
 
 /* todo: cart-component styles  */
