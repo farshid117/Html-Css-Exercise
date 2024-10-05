@@ -3,6 +3,7 @@
   font-family: "YekanBakh" ;
   line-height: 1.5;
   background: rgba(0,0,0,0.5);
+  color: #1D2939;
   
 }
 .icon-pack{
@@ -31,22 +32,28 @@ svg {
   align-items: center;
 }
 .header__logo{
-
+  width: 48px;
+  height: 48px;
 }
 .header__menu{
   display: flex;
   align-items: center;
-
+  gap: 24px;
+  margin-right: 38px;
 }
 .menu__item{
 
 }
 .menu__link{
-
+  font-family: "YekanBakh Medium";
+  color: inherit;
+  display: flex;
+  align-items: center;
 }
 .menu__link_icon{
   width: 14px;
   height: 14px;
+  margin-right: 5px;
 }
 .header__left{
   display: flex;
