@@ -382,23 +382,55 @@ body {
   }
 }
 /* todo: Mega-Menu-Compenent styles  */
+.megamenu-body {
+  font-family: "YekanBakh";
+  line-height: 1.5;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.icon-pack {
+  display: none;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+}
+
+.megamenu__header {
+  background: #fff;
+  height: 80px;
+}
+
 .megamenu-container {
   width: 1216;
   margin: 0 auto;
 }
 
-.megamenu-body {
-  font-family: "YekanBakh";
-  line-height: 1.5;
+.header__wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-button {
-  font: inherit;
-  border: 0;
+.header__right {
+  display: flex;
+  align-items: center;
 }
 
-.icon-pack {
-  display: none;
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__link_icon {
+  width: 14px;
+  height: 14px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
 }
 
 /* todo: cart-component styles  */

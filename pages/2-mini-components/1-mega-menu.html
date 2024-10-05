@@ -20,7 +20,7 @@
             <path opacity="0.4" d="M13.2602 15.5302L9.74023 12.0002L13.2602 8.47021" stroke="currentColor"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
         </symbol>
-        <symbol id="arrow-down" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        <symbol id="arrow-down" viewBox="0 0 24 24" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502"
                 stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
@@ -168,7 +168,7 @@
         </symbol>
     </svg>
 
-    <header>
+    <header class="megamenu__header">
         <div class="megamenu-container">
             <div class="header__wraper">
                 <div class="header__right">
@@ -178,7 +178,9 @@
                         <li class="menu__item">
                             <a class="menu__link" href="#">
                                 محصولات
-                                <svg class="menu__link_icon"><use href="#arrow-down"></use></svg>
+                                <svg class="menu__link_icon">
+                                    <use href="#arrow-down"></use>
+                                </svg>
                             </a>
                         </li>
                         <li class="menu__item"><a class="menu__link" href="#">بلاک</a></li>
@@ -188,14 +190,20 @@
                 </div>
                 <div class="header__left">
                     <div class="header__left_item">
-                        <svg><use class="header__icon" href="#search-normal"></use></svg>
+                        <svg>
+                            <use class="header__icon" href="#search-normal"></use>
+                        </svg>
                     </div>
                     <div class="header__left_item">
-                        <svg><use class="header__icon" href="#shopping-bag"></use></svg>
+                        <svg>
+                            <use class="header__icon" href="#shopping-bag"></use>
+                        </svg>
                         <span class="header__icon_badge">2</span>
                     </div>
                     <a href="header__login_btn">
-                        <svg class="header__login_icon"><use href="#user"></use></svg>
+                        <svg class="header__login_icon">
+                            <use href="#user"></use>
+                        </svg>
                         <span>عضویت | ورود</span>
                     </a>
                 </div>
