@@ -465,12 +465,15 @@ svg {
 
 .header__left_item {
   position: relative;
+  padding: 10px;
+  background: rgb(246, 245, 245);
+  border-radius: 10px;
+  border: 1px solid #c6c7c9;
 }
 
 .header__icon_badge {
   width: 20px;
   height: 20px;
-  line-height: 24px;
   background: #FF74DB;
   border-radius: 50px;
   position: absolute;
