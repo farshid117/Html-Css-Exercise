@@ -93,6 +93,7 @@ svg {
 .header__login_btn {
   display: flex;
   align-items: center;
+  gap: 5px;
   padding: 12px 16px;
   border-radius: 10px;
   background: #7F56D9;
@@ -105,5 +106,5 @@ svg {
   background: #7620e6;
 }
 .header__login_icon {
-  margin-left: 5px;
+  
 }
