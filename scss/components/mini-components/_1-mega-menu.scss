@@ -83,16 +83,19 @@ svg {
 .header__icon {
 }
 .header__icon_badge {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   background: #FF74DB;
+  color: #fff;
   border-radius: 50px;
   position: absolute;
-  top: -10px;
+  top: -6px;
   right: -10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "YekanBakh Medium";
+  outline: 3px solid #fff;
 }
 .header__login_btn {
   display: flex;
