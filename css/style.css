@@ -489,6 +489,7 @@ svg {
   background: #7F56D9;
   color: #fff;
   transition: all 0.4s;
+  font-family: "YekanBakh Medium";
 }
 
 .header__login_btn:hover {
