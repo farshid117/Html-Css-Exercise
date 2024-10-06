@@ -71,10 +71,14 @@ svg {
 }
 .header__left_item {
   position: relative;
-  padding: 10px;
-  background: rgb(246, 245, 245);
+  width: 48px;
+  height: 48px;
   border-radius: 10px;
-  border: 1px solid #c6c7c9;
+  border: 1px solid #E5E5E5;
+  color: #1d2939;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header__icon {
 }
