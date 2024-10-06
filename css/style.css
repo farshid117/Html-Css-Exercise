@@ -386,7 +386,7 @@ body {
   font-family: "YekanBakh";
   line-height: 1.5;
   background: rgba(0, 0, 0, 0.5);
-  color: #1D2939;
+  color: #1d2939;
 }
 
 .icon-pack {
@@ -436,14 +436,26 @@ svg {
   color: inherit;
   display: flex;
   align-items: center;
+  gap: 6px;
+  transition: color 0.1s ease-in;
+}
+
+.menu__link:hover {
+  color: #FF74DB;
+  font-weight: bold;
 }
 
 .menu__link_icon {
   width: 14px;
   height: 14px;
-  margin-right: 5px;
+  transition: all 0.1s ease-in;
 }
 
+.menu__link:hover .menu__link_icon {
+  transform: rotate(180deg);
+}
+
+/* Header Left */
 .header__left {
   display: flex;
   align-items: center;

@@ -1,77 +1,79 @@
 /* todo: Mega-Menu-Compenent styles  */
-.megamenu-body{
-  font-family: "YekanBakh" ;
+.megamenu-body {
+  font-family: "YekanBakh";
   line-height: 1.5;
-  background: rgba(0,0,0,0.5);
-  color: #1D2939;
-  
+  background: rgba(0, 0, 0, 0.5);
+  color: #1d2939;
 }
-.icon-pack{
+.icon-pack {
   display: none;
 }
 svg {
   width: 24px;
   height: 24px;
 }
-.megamenu__header{
+.megamenu__header {
   background: #fff;
   height: 80px;
 }
-.megamenu-container{
+.megamenu-container {
   width: 1216;
   margin: 0 auto;
 }
 
-.header__wraper{
+.header__wraper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header__right{
+.header__right {
   display: flex;
   align-items: center;
 }
-.header__logo{
+.header__logo {
   width: 48px;
   height: 48px;
 }
-.header__menu{
+.header__menu {
   display: flex;
   align-items: center;
   gap: 24px;
   margin-right: 38px;
 }
-.menu__item{
-
+.menu__item {
 }
-.menu__link{
+ .menu__link{
   font-family: "YekanBakh Medium";
   color: inherit;
   display: flex;
   align-items: center;
+  gap: 6px;
+  transition: color .1s ease-in;
 }
-.menu__link_icon{
+.menu__link:hover{
+  color: #FF74DB;
+  font-weight: bold;
+}
+.menu__link_icon {
   width: 14px;
   height: 14px;
-  margin-right: 5px;
+  transition: all .1s ease-in;
 }
-.header__left{
+.menu__link:hover .menu__link_icon {
+  transform: rotate(180deg);
+}
+/* Header Left */
+.header__left {
   display: flex;
   align-items: center;
 }
-.header__left_item{
-
+.header__left_item {
 }
-.header__icon{
-
+.header__icon {
 }
-.header__icon_badge{
-
+.header__icon_badge {
 }
-.header__login_btn{
-
+.header__login_btn {
 }
-.header__login_icon{
-
+.header__login_icon {
 }
-            
