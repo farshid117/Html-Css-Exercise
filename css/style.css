@@ -387,6 +387,7 @@ body {
   line-height: 1.5;
   background: rgba(0, 0, 0, 0.5);
   color: #1d2939;
+  position: relative;
 }
 
 .icon-pack {
@@ -412,12 +413,14 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  height: 80px;
+  position: relative;
 }
 
 .header__right {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .header__logo {
@@ -430,6 +433,11 @@ svg {
   align-items: center;
   gap: 24px;
   margin-right: 38px;
+  height: 100%;
+}
+
+.menu__item {
+  height: 100%;
 }
 
 .menu__link {
@@ -439,6 +447,7 @@ svg {
   align-items: center;
   gap: 6px;
   transition: color 0.1s ease-in;
+  height: 100%;
 }
 
 .menu__link:hover {
@@ -505,6 +514,40 @@ svg {
 
 .header__login_btn:hover {
   background: #7620e6;
+}
+
+/* Header-Submenu */
+.header-submenu {
+  position: absolute;
+  top: -285px;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: violet;
+  border: 2px solid #000;
+  z-index: -1;
+  transition: top 0.4s ease-in;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.product-link:hover ~ .header-submenu {
+  top: 80px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(153, 118, 251, 0.5);
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+
+.overlay.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* todo: cart-component styles  */
