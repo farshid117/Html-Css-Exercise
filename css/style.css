@@ -535,6 +535,10 @@ svg {
   border-radius: 0px 0px 25px 25px;
   transition: all 0.4s ease-in;
   z-index: -1;
+  display: flex;
+  gap: 40px;
+  flex-direction: row-reverse;
+  padding: 20px;
 }
 
 .product-link:hover ~ .header__submenu,
@@ -544,7 +548,22 @@ svg {
 }
 
 .header__submenu_col {
-  background: red;
+  background: rgb(253, 253, 253);
+  height: 100%;
+  flex-grow: 1;
+  border-radius: 0px 0px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.header__submenu_row {
+  background: rgb(228, 228, 230);
+  flex-grow: 1;
+}
+
+.header__submenu_row:nth-child(2) {
+  border-radius: 0px 0px 15px 0px;
 }
 
 /* Overlay */
