@@ -182,8 +182,8 @@
                                     <use href="#arrow-down"></use>
                                 </svg>
                             </a>
-                            <ul class="header-submenu">
-                            </ul>
+                            <div class="header__submenu">
+                            </div>
 
                         </li>
                         <li class="menu__item"><a class="menu__link" href="#">بلاک</a></li>
@@ -218,13 +218,22 @@
     <script>
         const productLink = document.querySelector(".product-link");
         const overlay = document.querySelector(".overlay")
+        const submenu = document.querySelector(".header__submenu")
 
-        productLink.addEventListener("mouseenter", (event) => {
+        //todo: Add .show Class To Overlay
+        productLink.addEventListener("mouseover", (event) => {
             overlay.classList.add("show")
         })
-        productLink.addEventListener("mouseleave", (event) => {
+        productLink.addEventListener("mouseout", (event) => {
             overlay.classList.remove("show")
         })
+        submenu.addEventListener("mouseover", (event) => {
+            overlay.classList.add("show")
+        })
+        submenu.addEventListener("mouseout", (event) => {
+            overlay.classList.remove("show")
+        })
+        //todo: 
 
     </script>
 </body>
