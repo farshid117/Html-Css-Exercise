@@ -131,32 +131,37 @@ svg {
   top: 80px;
   left: 0;
   right: 0;
-  height: 347px;
+  height: 374px;
   background: #fafafa;
-  border: 2px solid #000;
-  border-top: 0;
-  padding: 0px;
-  border-radius: 0px 0px 25px 25px;
+
+  border-radius: 0px 0px 16px 16px;
   transition: all 0.4s ease-in;
   z-index: -1;
 
   display: flex;
-  gap: 40px;
+  gap: 20px;
   flex-direction: row-reverse;
   padding: 20px;
 }
 
 .product-link:hover ~ .header__submenu,
 .header__submenu:hover {
-  height: 347px;
+  height: 374px;
   padding: 20px;
 }
 .header__submenu_img {
+  border-radius: 14px;
+}
+.submenu__wrapper {
+  flex-grow: 1;
+
+  display: flex;
+  gap: 40px;
 }
 .header__submenu_col {
+  flex-grow: 1;
   background: rgb(253, 253, 253);
   height: 100%;
-  flex-grow: 1;
   border-radius: 0px 0px 25px 25px;
 
   display: flex;
@@ -164,11 +169,56 @@ svg {
   gap: 40px;
 }
 .header__submenu_row {
-  background: rgb(228, 228, 230);
   flex-grow: 1;
+  background: rgb(228, 228, 230);
+  position: relative;
 }
-.header__submenu_row:nth-child(2){
-  border-radius: 0px 0px 15px 0px;
+
+/* Border-Dashed Between Rows */
+.row-first::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+  width: 2px;
+  background-image: linear-gradient(#E5E5E5 50%, white 50%);
+  background-size: 2px 14px;
+  background-repeat: repeat-y;
+}
+.row-first::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+
+  height: 2px;
+  background-image: linear-gradient(to right,#E5E5E5 50%, white 50%);
+  background-repeat: repeat;
+  background-size: 14px 2px;
+}
+.row-last::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -20px;
+  width: 2px;
+  background-image: linear-gradient(#E5E5E5 50%, #fff 50%);
+  background-size: 2px 14px;
+  background-repeat: repeat-y;
+}
+.row-last::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20px;
+  height: 2px;
+  background-image: linear-gradient(to right ,#e5e5e5 50%, #fff 50%);
+  background-size: 14px 2px;
+  background-repeat: repeat-x;
 }
 
 /* Overlay */
