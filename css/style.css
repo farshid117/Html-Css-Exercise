@@ -745,6 +745,13 @@ svg {
   visibility: visible;
 }
 
+/* css-components --> 9-popup styles */
+.popup-proj-body {
+  font-family: "YekanBakh";
+  line-height: 1.5;
+  color: #1d2939;
+}
+
 /* 12-load-more styles */
 .loadmore-body {
   font-family: "YekanBakh";
