@@ -3,4 +3,24 @@
   font-family: "YekanBakh";
   line-height: 1.5;
   color: #1d2939;
+  min-height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg-sprite{
+    display: none;
+}
+.popup-btn{
+    border: inherit;
+    font: inherit;
+    padding: 10px 15px;
+    background: rgb(123, 32, 214);
+    color: #fff;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
