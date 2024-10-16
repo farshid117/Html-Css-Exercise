@@ -751,25 +751,37 @@ svg {
   line-height: 1.5;
   color: #1d2939;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .svg-sprite {
   display: none;
 }
 
-.popup-btn {
+.popup-btn { /* flex-Container */
   border: inherit;
   font: inherit;
-  padding: 10px 15px;
-  background: rgb(123, 32, 214);
+  background: #ED1A3B;
   color: #fff;
   border-radius: 10px;
+  padding: 18px 0px;
+  width: 326px;
+  cursor: pointer;
+  margin: 100px auto;
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.popup-btn:hover {
+  background: #f30000;
+}
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(9, 9, 9, 0.5);
+  z-index: -1;
 }
 
 /* 12-load-more styles */
