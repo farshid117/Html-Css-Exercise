@@ -35,18 +35,41 @@
         </symbol>
     </svg>
 
-    <button class="popup-btn">
+    <button class="popup__btn">
         <span>عضویت در خبرنامه</span>
         <svg>
             <use href="#arrow-left"></use>
         </svg>
     </button>
-    <div class="popup-overlay"></div>
+
+    <div class="popup__box">
+        <div class="popup__box_close">
+            <svg>
+                <use href="#cancel"></use>
+            </svg>
+        </div>
+        <img src="../../img/mini-projects/9-popup/vector.png" alt="">
+        <div class="popup__box_wrapper">
+            <h3 class="popup__box_title">شماره شما ثبت شد</h3>
+            <p class="popup__box_text">و با موفقیت عضو خبرنامه شدید 😇 </p>
+        </div>
+    </div>
+
+    <div class="popup__overlay"></div>
 
 
     <!-- //todo: jsvascript -->
     <script>
+        const popupBtn = document.querySelector(".popup__btn")
+        const popupBox = document.querySelector(".popup__box")
+        const closeBtn = document.querySelector(".popup__box_close")
 
+        popupBtn.addEventListener("click",(event) => {
+            popupBox.classList.add("show")
+        })
+        closeBtn.addEventListener("click",(event) => {
+            popupBox.classList.remove("show")
+        })
     </script>
 </body>
 
