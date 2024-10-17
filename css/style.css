@@ -780,11 +780,13 @@ svg {
 }
 
 .popup__box {
-  width: 500px;
-  height: 300px;
-  padding: 24px;
   background: #fff;
+  padding: 24px;
   border-radius: 16px;
+  font-size: 18px;
+  font-family: "YekanBakh Medium";
+  width: 384px;
+  height: 282px;
   z-index: 20;
   position: fixed;
   top: 50%;
@@ -798,6 +800,9 @@ svg {
   visibility: hidden;
   opacity: 0;
   transition: 0.4s;
+}
+.popup__box_title {
+  font-weight: bold;
 }
 
 .popup__box.show {
