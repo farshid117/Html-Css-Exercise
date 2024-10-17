@@ -66,9 +66,11 @@
 
         popupBtn.addEventListener("click",(event) => {
             popupBox.classList.add("show")
+            popupBtn.style.display = "none"
         })
         closeBtn.addEventListener("click",(event) => {
             popupBox.classList.remove("show")
+            popupBtn.style.display = "flex" 
         })
     </script>
 </body>
