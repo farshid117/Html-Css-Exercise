@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8"> <!-- for show farsi text in Linux Server -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="کلمات کلیدی پروژه برای بالابردن سئو" />
+    <meta name="description" content="توضیحی از پروژه" />
+    <meta name="outher" content="مهندس علیرضا خیاطپور" />
+
+    <link rel="icon" href="../img/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <title>TimeLine Component</title>
+</head>
+<!-- //todo: style -->
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        /*correct image name:login-bg-3.jpeg */
+        background: #080710 url("../img/login/login-bg-5.jpeg") no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        text-align: left;
+
+    }
+
+    .form-label {
+        color: #fff;
+    }
+
+    .form-wrapper {
+        position: relative;
+        padding: 50px 35px 35px 35px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.13);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(5px);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+        z-index: 10;
+
+        /*  
+        filter: grayscale(100%);
+        filter: sepia(100%); 
+      */
+
+    }
+
+
+    form::before {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+
+        background: #1CD8D2;
+        background: -webkit-linear-gradient(to right, #93EDC7, #1CD8D2);
+        background: linear-gradient(to right, #93EDC7, #1CD8D2);
+
+        opacity: .5;
+        filter: blur(25px);
+    }
+
+    form::after {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        bottom: 0;
+        right: 0;
+        transform: translate(50%, 50%);
+
+        background: #FF512F;
+        background: linear-gradient(to right, #DD2476, #FF512F);
+        background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
+
+        opacity: .5;
+        filter: blur(25px);
+    }
+
+    input[type="text"] {
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(1px);
+        color: whitesmoke;
+        transition: background .3s
+    }
+
+    input[type="text"]:focus {
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(1px);
+        color: whitesmoke;
+    }
+
+
+    ::selection {
+        background: #ffff00;
+        color: #000;
+    }
+
+    /* todo: Prfile dropdown Button */
+    .user__profile {
+        position: relative;
+      
+        
+    }
+
+    .user__profile_btn {
+        position: relative;
+        z-index: 2;
+        margin-top: 20px;
+    }
+
+    .chvron svg {
+        margin-left: 10px;
+        width: 20px;
+        transition: .3s;
+    }
+
+    .user__profile_btn.show .chvron svg {
+        transform: rotate(180deg)
+    }
+
+    /* dorpdown Menu */
+    .dropdown {
+        position: absolute;
+        left: 2px;
+        top: 55px;
+        width: 130px;
+        height: auto;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 5px;
+        background: whitesmoke;
+        transition: .3s;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-15px);
+   
+
+
+    }
+
+    .user__profile_btn.show + .dropdown {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(3px);
+       
+    }
+
+    .dorpdown__list {
+        width: 100%;
+        padding-right: 0 !important;
+        margin-bottom: 0 !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dropdown__item {
+        padding: 5px;
+        cursor: pointer !important;
+
+    }
+
+    .dropdown__item:not(.last-item) {
+        border-bottom: 1px solid #d5d5d5;
+
+    }
+
+    .dropdown__item .dropdown__link {
+        display: block;
+        color: #000;
+        font-size: 17px;
+        text-align: center;
+        cursor: pointer !important;
+        transition: .3s;
+    }
+    .dropdown__item .dropdown__link:hover{
+        background-color: rgb(222, 221, 221);
+    }
+</style>
+
+<!-- //todo: body -->
+
+<body class="">
+    <div class="container h-100">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <div class="user__profile ">
+                    <button class="btn btn-primary user__profile_btn  ">
+                        <span class="chvron">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </span>
+                        user profile
+                    </button>
+                    <div class="dropdown show">
+                
+                        <ul class="dropdown__List ps-0 mb-0">
+                            <li class="dropdown__item "><a href="#" class="dropdown__link">Bascket</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">Courses</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">Account</a></li>
+                            <li class="dropdown__item last-item"><a href="#" class="dropdown__link fw-bold text-danger">Logout</a></li>
+                        </ul>
+                
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="form-wrapper">
+                    <form>
+                        <label for="" class="form-label">First Name</label>
+                        <input type="text" class="form-control">
+
+                        <label for="" class="form-label mt-5">Last Name</label>
+                        <input type="text" class="form-control">
+
+                        <div class="form-btn text-center">
+                            <button class="btn btn-primary mt-5"> Login </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--   <div align="center" class="return mt-5">
+        <a href="/" class="button button__danger">بازگشت</a>
+    </div> -->
+</body>
+
+<!-- //todo: jsvascript -->
+<script>
+    const dropdownBtn = document.querySelector(".user__profile_btn")
+    const dropdownLinks = document.querySelectorAll(".dropdown__link") //NodeList
+
+    dropdownBtn.addEventListener("click", () => {
+        dropdownBtn.classList.toggle("show")
+    })
+    dropdownLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            dropdownBtn.classList.toggle("show")
+        })
+    })
+
+    
+</script>
+
+</html>
