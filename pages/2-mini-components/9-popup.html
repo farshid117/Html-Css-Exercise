@@ -63,6 +63,7 @@
         const popupBtn = document.querySelector(".popup__btn")
         const popupBox = document.querySelector(".popup__box")
         const closeBtn = document.querySelector(".popup__box_close")
+        const overlayElm = document.querySelector(".popup__overlay")
 
         popupBtn.addEventListener("click",(event) => {
             popupBox.classList.add("show")
@@ -71,6 +72,11 @@
         closeBtn.addEventListener("click",(event) => {
             popupBox.classList.remove("show")
             popupBtn.style.display = "flex" 
+        })
+        overlayElm.addEventListener("click",(event) => {
+            popupBox.classList.remove("show")
+             popupBtn.style.display = "flex" 
+            
         })
     </script>
 </body>

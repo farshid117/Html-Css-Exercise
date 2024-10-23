@@ -779,6 +779,7 @@ svg {
   background: #f30000;
 }
 
+/* Popup Box */
 .popup__box {
   background: #fff;
   padding: 24px;
@@ -831,7 +832,7 @@ svg {
   background: #0f1115;
 }
 
-/* todo: Overley */
+/* Popup Overley */
 .popup__overlay {
   position: fixed;
   inset: 0;

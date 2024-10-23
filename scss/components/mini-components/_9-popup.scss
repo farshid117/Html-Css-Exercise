@@ -29,7 +29,7 @@
 .popup__btn:hover {
   background: #f30000;
 }
-
+/* Popup Box */
 .popup__box {
   background: #fff;
   padding: 24px;
@@ -61,6 +61,7 @@
 .popup__box.show {
   visibility: visible;
   opacity: 1;
+ 
 }
 .popup__box_close {
   background: #1D2539;
@@ -84,7 +85,7 @@
   background: #0f1115;
 }
 
-/* todo: Overley */
+/* Popup Overley */
 .popup__overlay {
   position: fixed;
   inset: 0;
