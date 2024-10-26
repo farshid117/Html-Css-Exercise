@@ -979,6 +979,12 @@ svg {
   margin-top: 1rem;
   box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
   padding: 10px 30px;
+  display: flex;
+  align-items: center;
+}
+.navmenu-advance__left {
+  display: flex;
+  align-items: center;
 }
 .navmenu-advance__left_logo {
   height: 100%;
