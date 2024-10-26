@@ -1,20 +1,39 @@
 /* todo: 1-NavMenu-advance styles  */
 /* Utilities */
 
-.navmenu-advance-body {
+.navmenu-advance__body {
   font-family: "YekanBakh";
   line-height: 1.5;
   background: #f7f8fd;
   color: #1d2939;
 }
-.navmenu-advance-container{
+.navmenu-advance__container{
   max-width: 90%;
   margin: 0 auto;
 }
-.navmenu-advance-section{
+.navmenu-advance{
   height: 100px;
   background: #fff;
   border-radius: 12px;
   margin-top: 1rem;
   box-shadow: 0px 2px 8px 0px rgba(99,99,99, 0.2);
+  padding: 10px 30px;
+
+  &__left{
+
+  }
+  &__left_logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__left_img{
+    max-width:40px ;
+    max-height: 40px
+  }
+
+  &__left_imgtitle{
+
+  }
 }
