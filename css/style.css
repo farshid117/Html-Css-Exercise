@@ -973,9 +973,8 @@ svg {
 }
 
 .navmenu-advance-section {
-  width: 100%;
   height: 100px;
-  background: red;
+  background: blue;
 }
 
 /* todo: cart-component styles  */
