@@ -992,9 +992,15 @@ svg {
   align-items: center;
 }
 .navmenu-advance__left_img {
-  max-width: 40px;
-  max-height: 40px;
+  min-width: 50px;
 }
+.navmenu-advance__left_img img {
+  width: 100%;
+}
+.navmenu-advance__left_imgtitle {
+  font-family: "YekanBakh";
+}
+
 /* todo: cart-component styles  */
 .cart {
   font-size: 100px;
