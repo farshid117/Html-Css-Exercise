@@ -42,7 +42,7 @@
   &__left_imgtitle{
     font-family: "YekanBakh";
   }
-
+/* navmenu List */
   &__left_list{
     display: flex;
     align-items: center;
@@ -53,9 +53,21 @@
 
   }
   &__left_btn{
-    
-  }
-  &__left_link{
+    font: inherit;
+    border: 0;
+    background: linear-gradient(91deg, #1fb7f1, #1479ee);
+    border-radius: 20px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
   }
+   &__left_btn .first-btn{
+    color: #fff;
+   }
+  &__left_link:not(.first-btn){
+    color: #000;
+  }
+  
 }

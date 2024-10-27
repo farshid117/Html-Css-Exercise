@@ -981,6 +981,7 @@ svg {
   padding: 10px 30px;
   display: flex;
   align-items: center;
+  /* navmenu List */
 }
 .navmenu-advance__left {
   display: flex;
@@ -1006,6 +1007,23 @@ svg {
   align-items: center;
   column-gap: 30px;
 }
+.navmenu-advance__left_btn {
+  font: inherit;
+  border: 0;
+  background: linear-gradient(91deg, #1fb7f1, #1479ee);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.navmenu-advance__left_btn .first-btn {
+  color: #fff;
+}
+.navmenu-advance__left_link:not(.first-btn) {
+  color: #000;
+}
+
 /* todo: cart-component styles  */
 .cart {
   font-size: 100px;
