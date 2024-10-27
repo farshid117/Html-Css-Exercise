@@ -25,6 +25,7 @@
   &__left{
     display: flex;
     align-items: center;
+    column-gap: 50px;
   }
   &__left_logo{
     height: 100%;
@@ -40,5 +41,21 @@
 }
   &__left_imgtitle{
     font-family: "YekanBakh";
+  }
+
+  &__left_list{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+
+  }
+  &__left_item{
+
+  }
+  &__left_btn{
+    
+  }
+  &__left_link{
+
   }
 }

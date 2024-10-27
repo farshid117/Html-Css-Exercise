@@ -985,6 +985,7 @@ svg {
 .navmenu-advance__left {
   display: flex;
   align-items: center;
+  column-gap: 50px;
 }
 .navmenu-advance__left_logo {
   height: 100%;
@@ -1000,7 +1001,11 @@ svg {
 .navmenu-advance__left_imgtitle {
   font-family: "YekanBakh";
 }
-
+.navmenu-advance__left_list {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
 /* todo: cart-component styles  */
 .cart {
   font-size: 100px;
