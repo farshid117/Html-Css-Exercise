@@ -982,7 +982,9 @@ svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* navmenu List */
+  /* navmenu left */
+  /* navmenu left List */
+  /* navmenu Right */
 }
 .navmenu-advance__left {
   display: flex;
@@ -1025,6 +1027,21 @@ svg {
 }
 .navmenu-advance__left_link:not(.first-btn) {
   color: #000;
+}
+.navmenu-advance__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+.navmenu-advance__right_user {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.navmenu-advance__right_userprofile img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
 }
 
 /* todo: cart-component styles  */

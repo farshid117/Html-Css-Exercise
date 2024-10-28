@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+/* navmenu left */
   &__left{
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@
     font-family: "YekanBakh";
     
   }
-/* navmenu List */
+/* navmenu left List */
   &__left_list,
   &__right_list{
     display: flex;
@@ -75,5 +75,21 @@
   &__left_link:not(.first-btn){
     color: #000;
   }
-  
+
+  /* navmenu Right */
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+  }
+  &__right_user{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  &__right_userprofile img{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+  }
 }
