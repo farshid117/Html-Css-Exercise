@@ -981,17 +981,19 @@ svg {
   padding: 10px 30px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   /* navmenu List */
 }
 .navmenu-advance__left {
   display: flex;
   align-items: center;
-  column-gap: 50px;
+  column-gap: 75px;
 }
 .navmenu-advance__left_logo {
   height: 100%;
   display: flex;
   align-items: center;
+  column-gap: 5px;
 }
 .navmenu-advance__left_img {
   min-width: 50px;
@@ -1002,7 +1004,7 @@ svg {
 .navmenu-advance__left_imgtitle {
   font-family: "YekanBakh";
 }
-.navmenu-advance__left_list {
+.navmenu-advance__left_list, .navmenu-advance__right_list {
   display: flex;
   align-items: center;
   column-gap: 30px;
@@ -1011,11 +1013,12 @@ svg {
   font: inherit;
   border: 0;
   background: linear-gradient(91deg, #1fb7f1, #1479ee);
-  border-radius: 20px;
+  border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
+  padding: 10px 10px;
 }
 .navmenu-advance__left_btn .first-btn {
   color: #fff;

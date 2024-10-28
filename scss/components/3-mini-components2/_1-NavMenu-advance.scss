@@ -21,16 +21,19 @@
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   &__left{
     display: flex;
     align-items: center;
-    column-gap: 50px;
+    column-gap: 75px;
+    
   }
   &__left_logo{
     height: 100%;
     display: flex;
     align-items: center;
+    column-gap: 5px;
   }
 
   &__left_img{
@@ -41,9 +44,11 @@
 }
   &__left_imgtitle{
     font-family: "YekanBakh";
+    
   }
 /* navmenu List */
-  &__left_list{
+  &__left_list,
+  &__right_list{
     display: flex;
     align-items: center;
     column-gap: 30px;
@@ -56,12 +61,13 @@
     font: inherit;
     border: 0;
     background: linear-gradient(91deg, #1fb7f1, #1479ee);
-    border-radius: 20px;
+    border-radius: 25px;
 
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+    padding: 10px 10px;
   }
    &__left_btn .first-btn{
     color: #fff;
