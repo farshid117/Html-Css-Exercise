@@ -87,6 +87,9 @@
     align-items: center;
     column-gap: 10px;
   }
+  &__right_userstatus a{
+    font-size: 20px;
+  }
   &__right_userprofile img{
     max-width: 50px;
     max-height: 50px;
