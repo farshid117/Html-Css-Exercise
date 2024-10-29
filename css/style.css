@@ -1031,15 +1031,21 @@ svg {
 .navmenu-advance__wrapper {
   display: flex;
   align-items: center;
-  column-gap: 40px;
+  column-gap: 60px;
 }
 .navmenu-advance__right_user {
   display: flex;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 20px;
 }
-.navmenu-advance__right_userstatus a {
+.navmenu-advance__right_userstatus {
+  background: teal;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.navmenu-advance__right_userstatus span {
   font-size: 20px;
+  color: #fff;
 }
 .navmenu-advance__right_userprofile img {
   max-width: 50px;
