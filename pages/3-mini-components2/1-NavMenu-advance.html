@@ -20,19 +20,22 @@
                     <h3 class="navmenu-advance__left_imgtitle">sassbox</h3>
                 </div>
 
-                <ul class="navmenu-advance__left_list">
-                    <li class="navmenu-advance__left_item">
-                        <button class="navmenu-advance__left_btn">
-                            <a href="" class="navmenu-advance__left_link first-btn">Dashboard</a>
-                        </button>
+                <ul id="menu" class="navmenu-advance__left_list">
+                    <li class="navmenu-advance__left_item active ">
+                        <a href="" class="navmenu-advance__left_link first-btn">Dashboard</a>
                     </li>
-                    <li class="navmenu-advance__left_item"><a href="" class="navmenu-advance__left_link">Profile</a>
+                    <li class="navmenu-advance__left_item ">
+                        <a href="" class="navmenu-advance__left_link">Profile</a>
                     </li>
-                    <li class="navmenu-advance__left_item"><a href="" class="navmenu-advance__left_link">Messages</a>
+                    <li class="active  ">
+                        <a href="" class="navmenu-advance__left_link">Messages</a>
                     </li>
-                    <li class="navmenu-advance__left_item"><a href="" class="navmenu-advance__left_link">About us</a>
+                    <li class="navmenu-advance__left_item ">
+                        <a href="" class="navmenu-advance__left_link">About us</a>
                     </li>
-                    <li class="navmenu-advance__left_item"><a href="" class="navmenu-advance__left_link">Login</a></li>
+                    <li class="navmenu-advance__left_item ">
+                        <a href="" class="navmenu-advance__left_link active">Login</a>
+                    </li>
                 </ul>
             </div>
 
@@ -73,21 +76,32 @@
                         </li>
                     </ul>
 
-                    <div class="navmenu-advance__right_user">
-                        <div class="navmenu-advance__right_userstatus">
-                            <span href="#">online</span>
-                        </div>
-                        <div class="navmenu-advance__right_userprofile">
-                            <img src="../../img/compenents2/team4.png" alt="">
-                        </div>
-                    </div>
+                    <div class=" navmenu-advance__right_user">
+                                        <div class="navmenu-advance__right_userstatus">
+                                            <span href="#">online</span>
+                                        </div>
+                                        <div class="navmenu-advance__right_userprofile">
+                                            <img src="../../img/compenents2/team4.png" alt="">
+                                        </div>
                 </div>
             </div>
-        </section>
+    </div>
+    </section>
     </div>
 
     <script>
+        const menu = document.querySelector("#menu")
+        console.log("menu: ", menu);
+        const menuLinks = document.querySelectorAll(".navmenu-advance__left_link")
+        console.log("menuLinks: ", menuLinks);
 
+       menu.addEventListener("click", (event) => {
+        event.preventDefault();
+        menuLinks.forEach((menuLink) => {
+            menuLink.classList.remove("active");
+        })
+        event.target.classList.add("active")
+       }) 
     </script>
 </body>
 

@@ -7,96 +7,89 @@
   background: #f7f8fd;
   color: #1d2939;
 }
-.navmenu-advance__container{
+.navmenu-advance__container {
   max-width: 90%;
   margin: 0 auto;
 }
-.navmenu-advance{
+.navmenu-advance {
   height: 100px;
   background: #fff;
   border-radius: 12px;
   margin-top: 1rem;
-  box-shadow: 0px 2px 8px 0px rgba(99,99,99, 0.2);
+  box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
   padding: 10px 30px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-/* navmenu left */
-  &__left{
+  /* navmenu left */
+  &__left {
     display: flex;
     align-items: center;
     column-gap: 75px;
-    
   }
-  &__left_logo{
+  &__left_logo {
     height: 100%;
     display: flex;
     align-items: center;
     column-gap: 5px;
   }
 
-  &__left_img{
-    min-width:50px ;
+  &__left_img {
+    min-width: 50px;
   }
-&__left_img img{
-  width: 100%;
-}
-  &__left_imgtitle{
+  &__left_img img {
+    width: 100%;
+  }
+  &__left_imgtitle {
     font-family: "YekanBakh";
-    
   }
-/* navmenu left List */
+  /* navmenu left List */
   &__left_list,
-  &__right_list{
+  &__right_list {
     display: flex;
     align-items: center;
     column-gap: 30px;
-
   }
-  &__left_item{
-
-  }
-  &__left_btn{
-    font: inherit;
-    border: 0;
-    background: linear-gradient(91deg, #1fb7f1, #1479ee);
+  &__left_link {
+   color: #000;
+    font-weight: bold;
     border-radius: 25px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
     padding: 10px 10px;
+
+    transition: .3s;
   }
-   &__left_btn .first-btn{
+  &__left_link.active {
     color: #fff;
-   }
-  &__left_link:not(.first-btn){
-    color: #000;
+    background: linear-gradient(91deg, #3ac2ff, #2f56ff);
   }
 
   /* navmenu Right */
-  &__wrapper{
+  &__wrapper {
     display: flex;
     align-items: center;
     column-gap: 60px;
   }
-  &__right_user{
+  &__right_user {
     display: flex;
     align-items: center;
     column-gap: 20px;
   }
-  &__right_userstatus{
-    background: teal;
+  &__right_userstatus {
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 5px;
+    background: #edfdfa;
+    color: #1f927f;
   }
-  &__right_userstatus span{
+  &__right_userstatus span {
     font-size: 20px;
-    color: #fff;
+    color: #1f927f;
   }
-  &__right_userprofile img{
+  &__right_userprofile img {
     max-width: 50px;
     max-height: 50px;
     border-radius: 50%;
@@ -104,15 +97,18 @@
 }
 
 /* Responsive code */
-@media screen  and(max-width:1200px){
-	/* css prperty*/
+@media screen and (max-width: 1200px) {
+  /* CSS properties */
 }
-@media screen  and(max-width:992px){
-	/* css prperty*/
+
+@media screen and (max-width: 992px) {
+  /* CSS properties */
 }
-@media screen  and(max-width:768px){
-	/* css prperty*/
+
+@media screen and (max-width: 768px) {
+  /* CSS properties */
 }
-@media screen  and(max-width:576px){
-	/* css prperty*/
+
+@media screen and (max-width: 576px) {
+  /* CSS properties */
 }
