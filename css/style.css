@@ -1025,6 +1025,13 @@ svg {
   color: #fff;
   background: linear-gradient(91deg, #3ac2ff, #2f56ff);
 }
+.navmenu-advance__burger {
+  display: none;
+}
+.navmenu-advance__burger img {
+  width: 48px;
+  height: 48px;
+}
 .navmenu-advance__wrapper {
   display: flex;
   align-items: center;

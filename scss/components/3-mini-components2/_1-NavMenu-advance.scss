@@ -52,7 +52,7 @@
     column-gap: 30px;
   }
   &__left_link {
-   color: #000;
+    color: #000;
     font-weight: bold;
     border-radius: 25px;
 
@@ -61,11 +61,18 @@
     align-items: center;
     padding: 10px 10px;
 
-    transition: .3s;
+    transition: 0.3s;
   }
   &__left_link.active {
     color: #fff;
     background: linear-gradient(91deg, #3ac2ff, #2f56ff);
+  }
+  &__burger {
+    display: none;
+  }
+  &__burger img {
+    width: 48px;
+    height: 48px;
   }
 
   /* navmenu Right */
