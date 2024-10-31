@@ -21,21 +21,20 @@
                 </div>
 
                 <ul id="menu" class="navmenu-advance__left_list">
-                    <li class="navmenu-advance__left_item active ">
-                        <a href="" class="navmenu-advance__left_link first-btn">Dashboard</a>
+                    <li class="navmenu-advance__left_item">
+                        <a href="" class="navmenu-advance__left_link active">Dashboard</a>
                     </li>
-                    <li class="navmenu-advance__left_item ">
+                    <li class="navmenu-advance__left_item">
                         <a href="" class="navmenu-advance__left_link">Profile</a>
                     </li>
-                    <li class="active  ">
+                    <li class="navmenu-advance__left_item">
                         <a href="" class="navmenu-advance__left_link">Messages</a>
                     </li>
-                    <li class="navmenu-advance__left_item ">
+                    <li class="navmenu-advance__left_item">
                         <a href="" class="navmenu-advance__left_link">About us</a>
                     </li>
-                    <li class="navmenu-advance__left_item ">
-                        <a href="" class="navmenu-advance__left_link active">Login</a>
-                    </li>
+                    <li class="navmenu-advance__left_item">
+                        <a href="" class="navmenu-advance__left_link">Login</a></li>
                 </ul>
             </div>
 
@@ -76,32 +75,41 @@
                         </li>
                     </ul>
 
-                    <div class=" navmenu-advance__right_user">
-                                        <div class="navmenu-advance__right_userstatus">
-                                            <span href="#">online</span>
-                                        </div>
-                                        <div class="navmenu-advance__right_userprofile">
-                                            <img src="../../img/compenents2/team4.png" alt="">
-                                        </div>
+                    <div class="navmenu-advance__right_user">
+                        <div class="navmenu-advance__right_userstatus">
+                            <span href="#">online</span>
+                        </div>
+                        <div class="navmenu-advance__right_userprofile">
+                            <img src="../../img/compenents2/team4.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
-    </div>
-    </section>
+
+            <div class="hamburger-icon">
+                <svg width="48px" height="48px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M4 18L20 18" stroke="#3355a3" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M4 12L20 12" stroke="#3355a3" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M4 6L20 6" stroke="#3355a3" stroke-width="2" stroke-linecap="round"></path>
+                    </g>
+                </svg>
+            </div>
+        </section>
     </div>
 
     <script>
-        const menu = document.querySelector("#menu")
-        console.log("menu: ", menu);
-        const menuLinks = document.querySelectorAll(".navmenu-advance__left_link")
-        console.log("menuLinks: ", menuLinks);
-
-       menu.addEventListener("click", (event) => {
+    const menu = document.querySelector("#menu");
+    const menuLinks = document.querySelectorAll(".navmenu-advance__left_link");
+    menu.addEventListener("click", (event) => {
         event.preventDefault();
         menuLinks.forEach((menuLink) => {
             menuLink.classList.remove("active");
-        })
-        event.target.classList.add("active")
-       }) 
+        });
+        event.target.classList.add("active");
+    });
     </script>
 </body>
 
