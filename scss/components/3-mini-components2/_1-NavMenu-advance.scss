@@ -23,6 +23,7 @@
   align-items: center;
   justify-content: space-between;
   /* navmenu left */
+  /* navmenu_left Logo */
   &__left {
     display: flex;
     align-items: center;
@@ -44,12 +45,12 @@
   &__left_imgtitle {
     font-family: "YekanBakh";
   }
-  /* navmenu left List */
+  /* navmenu_left List */
   &__left_list,
   &__right_list {
     display: flex;
     align-items: center;
-    column-gap: 30px;
+    column-gap: 15px;
   }
   &__left_link {
     color: #000;
@@ -79,7 +80,7 @@
   &__wrapper {
     display: flex;
     align-items: center;
-    column-gap: 60px;
+    column-gap: 50px;
   }
   &__right_user {
     display: flex;
@@ -105,17 +106,27 @@
 
 /* Responsive code */
 @media screen and (max-width: 1200px) {
-  /* CSS properties */
+  .navmenu-advance {
+    &__left {
+      column-gap: 35px;
+    }
+    &__left_list,
+    &__right_list {
+      column-gap: 15px;
+    }
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
-  /* CSS properties */
 }
 
 @media screen and (max-width: 768px) {
-  /* CSS properties */
 }
 
 @media screen and (max-width: 576px) {
-  /* CSS properties */
 }

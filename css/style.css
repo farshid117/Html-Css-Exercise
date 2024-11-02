@@ -983,7 +983,8 @@ svg {
   align-items: center;
   justify-content: space-between;
   /* navmenu left */
-  /* navmenu left List */
+  /* navmenu_left Logo */
+  /* navmenu_left List */
   /* navmenu Right */
 }
 .navmenu-advance__left {
@@ -1009,7 +1010,7 @@ svg {
 .navmenu-advance__left_list, .navmenu-advance__right_list {
   display: flex;
   align-items: center;
-  column-gap: 30px;
+  column-gap: 15px;
 }
 .navmenu-advance__left_link {
   color: #000;
@@ -1035,7 +1036,7 @@ svg {
 .navmenu-advance__wrapper {
   display: flex;
   align-items: center;
-  column-gap: 60px;
+  column-gap: 50px;
 }
 .navmenu-advance__right_user {
   display: flex;
@@ -1060,16 +1061,17 @@ svg {
 
 /* Responsive code */
 @media screen and (max-width: 1200px) {
-  /* CSS properties */
-}
-@media screen and (max-width: 992px) {
-  /* CSS properties */
-}
-@media screen and (max-width: 768px) {
-  /* CSS properties */
-}
-@media screen and (max-width: 576px) {
-  /* CSS properties */
+  .navmenu-advance__left {
+    column-gap: 35px;
+  }
+  .navmenu-advance__left_list, .navmenu-advance__right_list {
+    column-gap: 15px;
+  }
+  .navmenu-advance__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
 }
 /* todo: cart-component styles  */
 .cart {
