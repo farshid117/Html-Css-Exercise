@@ -68,16 +68,7 @@
     color: #fff;
     background: linear-gradient(91deg, #3ac2ff, #2f56ff);
   }
-  &__left_userstatus {
-    padding: 5px 10px;
-    border-radius: 5px;
-    background: #edfdfa;
-    color: #1f927f;
-  }
-  &__left_userstatus span {
-    font-size: 20px;
-    color: #1f927f;
-  }
+
   &__burger {
     display: none;
   }
@@ -91,6 +82,16 @@
     display: flex;
     align-items: center;
     column-gap: 50px;
+  }
+  &__right_userstatus {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #edfdfa;
+    color: #1f927f;
+  }
+  &__right_userstatus span {
+    font-size: 20px;
+    color: #1f927f;
   }
   &__right_user {
     display: flex;

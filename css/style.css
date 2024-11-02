@@ -1026,16 +1026,6 @@ svg {
   color: #fff;
   background: linear-gradient(91deg, #3ac2ff, #2f56ff);
 }
-.navmenu-advance__left_userstatus {
-  padding: 5px 10px;
-  border-radius: 5px;
-  background: #edfdfa;
-  color: #1f927f;
-}
-.navmenu-advance__left_userstatus span {
-  font-size: 20px;
-  color: #1f927f;
-}
 .navmenu-advance__burger {
   display: none;
 }
@@ -1047,6 +1037,16 @@ svg {
   display: flex;
   align-items: center;
   column-gap: 50px;
+}
+.navmenu-advance__right_userstatus {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #edfdfa;
+  color: #1f927f;
+}
+.navmenu-advance__right_userstatus span {
+  font-size: 20px;
+  color: #1f927f;
 }
 .navmenu-advance__right_user {
   display: flex;
