@@ -1071,6 +1071,7 @@ svg {
     align-items: center;
     column-gap: 15px;
     position: relative;
+    cursor: pointer;
   }
   .navmenu-advance__right_list {
     position: absolute;
@@ -1083,6 +1084,13 @@ svg {
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .navmenu-advance__right_list.show {
+    visibility: visible;
+    opacity: 1;
   }
 }
 /* todo: cart-component styles  */

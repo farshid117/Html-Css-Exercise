@@ -134,12 +134,24 @@
       const menuLinks = document.querySelectorAll(
         ".navmenu-advance__left_link"
       );
+      const rightWrapperElm = document.querySelector(
+        ".navmenu-advance__wrapper"
+      );
+      const rightListElm = document.querySelector(
+        ".navmenu-advance__right_list"
+      );
+
+      /* toggle active Modifire To leftMenu when Clicked Link */
       menu.addEventListener("click", (event) => {
         event.preventDefault();
         menuLinks.forEach((menuLink) => {
           menuLink.classList.remove("active");
         });
         event.target.classList.add("active");
+      });
+      /* toggel show Modifire To rightList as Dropdown in max-width: 1200px */
+      rightWrapperElm.addEventListener("click", (event) => {
+        rightListElm.classList.toggle("show");
       });
     </script>
   </body>
