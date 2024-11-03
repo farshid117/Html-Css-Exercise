@@ -151,6 +151,25 @@
 }
 
 @media screen and (max-width: 768px) {
+  .navmenu-advance {
+    &__left {
+      position: relative;
+    }
+    &__left_imgtitle {
+      font-size: 24px;
+    }
+    &__left_list {
+      position: absolute;
+      flex-direction: column;
+      top: 40px;
+      width: 100%;
+      background: #f7f8fd;
+      row-gap: 10px;
+      border-radius: 5px;
+      box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+      padding: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
