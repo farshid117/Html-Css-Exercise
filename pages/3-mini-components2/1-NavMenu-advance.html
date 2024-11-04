@@ -12,6 +12,12 @@
   <body class="navmenu-advance__body">
     <div class="navmenu-advance__container">
       <section class="navmenu-advance">
+        <!-- Burger 🍔 -->
+        <div class="navmenu-advance__burger">
+          <img src="../../img/compenents2/burger-icon.svg" alt="Burger Icon" />
+        </div>
+
+        <!-- todo: Left -->
         <div class="navmenu-advance__left">
           <div class="navmenu-advance__left_logo">
             <div class="navmenu-advance__left_img">
@@ -38,7 +44,7 @@
             </li>
           </ul>
         </div>
-
+        <!-- todo: Right -->
         <div class="navmenu-advance__right">
           <div class="navmenu-advance__wrapper">
             <ul class="navmenu-advance__right_list">
@@ -122,10 +128,6 @@
             </div>
           </div>
         </div>
-
-        <div class="navmenu-advance__burger">
-          <img src="../../img/compenents2/burger-icon.svg" alt="Burger Icon" />
-        </div>
       </section>
     </div>
     <!-- Script Section -->
@@ -140,8 +142,10 @@
       const rightListElm = document.querySelector(
         ".navmenu-advance__right_list"
       );
+      const burgerBtn = document.querySelector(".navmenu-advance__burger");
+      const leftListElm = document.querySelector(".navmenu-advance__left_list");
 
-      /* toggle active Modifire To leftMenu when Clicked Link */
+      /* toggle active Modifire To leftMenu when Clicked Link: Propagation*/
       menu.addEventListener("click", (event) => {
         event.preventDefault();
         menuLinks.forEach((menuLink) => {
@@ -153,6 +157,11 @@
       /* toggel show Modifire To rightList as Dropdown in max-width: 1200px */
       rightWrapperElm.addEventListener("click", (event) => {
         rightListElm.classList.toggle("show");
+      });
+
+      /* toggel show Modifire To LeftList as Dropdown in max-width: 768px */
+      burgerBtn.addEventListener("click", (event) => {
+        leftListElm.classList.toggle("show");
       });
     </script>
   </body>

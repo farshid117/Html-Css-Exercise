@@ -1032,6 +1032,7 @@ svg {
 .navmenu-advance__burger img {
   width: 48px;
   height: 48px;
+  stroke: #03adbd;
 }
 .navmenu-advance__wrapper {
   display: flex;
@@ -1076,7 +1077,7 @@ svg {
   .navmenu-advance__right_list {
     position: absolute;
     right: 0;
-    bottom: -245px;
+    bottom: -251px;
     width: 150px;
     flex-direction: column;
     row-gap: 20px;
@@ -1094,7 +1095,7 @@ svg {
   }
 }
 @media screen and (max-width: 768px) {
-  .navmenu-advance__left {
+  .navmenu-advance {
     position: relative;
   }
   .navmenu-advance__left_imgtitle {
@@ -1103,13 +1104,34 @@ svg {
   .navmenu-advance__left_list {
     position: absolute;
     flex-direction: column;
-    top: 40px;
-    width: 100%;
+    top: 100px;
+    width: 32%;
+    left: 0;
     background: #f7f8fd;
     row-gap: 10px;
     border-radius: 5px;
     box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
     padding: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .navmenu-advance__left_list.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .navmenu-advance__burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navmenu-advance {
+    margin-top: 0;
+    border-radius: 0;
+  }
+  .navmenu-advance__container {
+    max-width: 100% !important;
   }
 }
 /* todo: cart-component styles  */
