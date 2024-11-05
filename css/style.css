@@ -1127,6 +1127,9 @@ svg {
     visibility: visible;
     left: 0;
   }
+  .navmenu-advance__left_link {
+    min-width: 190; /* width of drawer - padding */
+  }
   .navmenu-advance__burger {
     display: block;
     cursor: pointer;

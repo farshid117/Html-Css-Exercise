@@ -187,6 +187,9 @@
       visibility: visible;
       left: 0;
     }
+    &__left_link {
+      min-width: 190; /* width of drawer - padding */
+    }
     &__burger {
       display: block;
       cursor: pointer;
