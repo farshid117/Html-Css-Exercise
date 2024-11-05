@@ -1015,7 +1015,7 @@ svg {
 .navmenu-advance__left_link {
   color: #000;
   font-weight: bold;
-  border-radius: 25px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1024,7 +1024,7 @@ svg {
 }
 .navmenu-advance__left_link.active {
   color: #fff;
-  background: linear-gradient(91deg, #3ac2ff, #2f56ff);
+  background: linear-gradient(91deg, #3ac2ff, #5d77e9);
 }
 .navmenu-advance__burger {
   display: none;
