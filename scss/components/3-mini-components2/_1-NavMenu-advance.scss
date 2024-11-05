@@ -153,7 +153,11 @@
 
 @media screen and (max-width: 768px) {
   .navmenu-advance {
-    position: relative;
+    margin-top: 0;
+    border-radius: 0;
+    &__container {
+      max-width: 100% !important;
+    }
 
     &__left {
     }
@@ -161,16 +165,18 @@
       font-size: 24px;
     }
     &__left_list {
-      position: absolute;
+      position: fixed;
       flex-direction: column;
-      top: 100px;
-      width: 32%;
-      left: 0;
+      top: 105px;
+      width: 230px;
+      height: 100vh;
+      left: -230px;
       background: #f7f8fd;
       row-gap: 10px;
       border-radius: 5px;
       box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
       padding: 20px;
+      align-items: flex-start;
 
       visibility: hidden;
       opacity: 0;
@@ -179,6 +185,7 @@
     &__left_list.show {
       opacity: 1;
       visibility: visible;
+      left: 0;
     }
     &__burger {
       display: block;
@@ -189,10 +196,5 @@
 
 @media screen and (max-width: 576px) {
   .navmenu-advance {
-    margin-top: 0;
-    border-radius: 0;
-    &__container {
-      max-width: 100% !important;
-    }
   }
 }
