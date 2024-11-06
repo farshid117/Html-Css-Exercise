@@ -1136,6 +1136,13 @@ svg {
   }
 }
 /* todo: 02-navmenu-dropdown styles  */
+.navmenu-dropdown-body {
+  min-width: 100vh;
+  background-image: url(../img/compenents2/bg_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* todo: 5-change-style Component */
 #card-hover {
   font-family: "YekanBakh";
