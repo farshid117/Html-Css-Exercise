@@ -1148,6 +1148,20 @@ svg {
 .navmenu-dropdown-cotainer {
   max-width: 90%;
   margin: 0 auto;
+  background: blue;
+}
+
+.navmenu-dropdown__box {
+  width: 80%;
+  margin: 0 auto;
+  background: red;
+  justify-content: center;
+}
+
+.navmenu-dropdown__menu {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
 /* todo: 5-change-style Component */
