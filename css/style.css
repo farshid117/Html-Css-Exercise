@@ -1135,11 +1135,7 @@ svg {
     cursor: pointer;
   }
 }
-/* todo: cart-component styles  */
-.cart {
-  font-size: 100px;
-}
-
+/* todo: 02-navmenu-dropdown styles  */
 /* todo: 5-change-style Component */
 #card-hover {
   font-family: "YekanBakh";
