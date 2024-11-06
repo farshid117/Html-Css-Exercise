@@ -17,8 +17,9 @@
   width: 80%;
   margin: 0 auto;
   background: red;
-  //   display: flex;
-  justify-content: center;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
 }
 .navmenu-dropdown__menu {
   display: flex;
@@ -28,4 +29,12 @@
 .navmenu-dropdown__item {
 }
 .navmenu-dropdown__link {
+  color: aliceblue;
+}
+
+select {
+  background: none;
+  border: none;
+  outline: 0;
+  font-family: "YekanBakh";
 }

@@ -1155,13 +1155,26 @@ svg {
   width: 80%;
   margin: 0 auto;
   background: red;
-  justify-content: center;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .navmenu-dropdown__menu {
   display: flex;
   justify-content: center;
   gap: 50px;
+}
+
+.navmenu-dropdown__link {
+  color: aliceblue;
+}
+
+select {
+  background: none;
+  border: none;
+  outline: 0;
+  font-family: "YekanBakh";
 }
 
 /* todo: 5-change-style Component */
