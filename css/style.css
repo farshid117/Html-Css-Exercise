@@ -1141,6 +1141,13 @@ svg {
   background-image: url(../img/compenents2/bg_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "YekanBakh";
+  line-height: 1.5;
+}
+
+.navmenu-dropdown-cotainer {
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 /* todo: 5-change-style Component */
