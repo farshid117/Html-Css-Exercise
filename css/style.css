@@ -1491,4 +1491,275 @@ select {
   background: #878787;
 }
 
+/* 4-my-miniProjects-Ui */
+/* todo: my-MiniProjects: 01-cube-example-ui  */
+.pseudo-practice__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.pseudo-practice__card {
+  margin: 0 auto;
+  height: 500px;
+}
+
+/* todo: Hero-image */
+.hero-image {
+  position: relative;
+  height: 100%;
+}
+
+.cube {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(119, 193, 227);
+  background-image: url(../img/03-my-miniproject-ui/react-square.png);
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: rotate(-25deg) skew(25deg);
+  box-shadow: -50px 50px 20px rgba(50, 50, 50, 0.15);
+}
+
+.cube::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  transform: skewY(-45deg);
+  left: -20px;
+  bottom: -10px;
+  background: rgb(154, 189, 221);
+}
+
+.cube::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  bottom: -20px;
+  left: -10px;
+  transform: skewX(-45deg);
+  background-color: rgb(188, 200, 221);
+}
+
+/* todo: my-MiniProjects: 02-dark-light-project-UI  */
+/* todo: my-MiniProjects: 03-Music Player UI */
+/* todo: my-MiniProjects: 04-Music List UI  */
+/* todo: my-MiniProjects: 05-TodoList UI */
+/* todo: my-MiniProjects: 05-BookList UI */
+/* css-components --> 9-popup styles */
+.popup-proj-body {
+  font-family: "YekanBakh";
+  line-height: 1.5;
+  color: #1d2939;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.svg-sprite {
+  display: none;
+}
+
+.popup__btn {
+  /* flex-Container */
+  border: inherit;
+  font: inherit;
+  background: #ed1a3b;
+  color: #fff;
+  border-radius: 10px;
+  padding: 18px 0px;
+  width: 326px;
+  cursor: pointer;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.popup__btn:hover {
+  background: #f30000;
+}
+
+/* Popup Box */
+.popup__box {
+  background: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  font-size: 18px;
+  font-family: "YekanBakh Medium";
+  width: 384px;
+  height: 282px;
+  z-index: 20;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+.popup__box_title {
+  font-weight: bold;
+}
+
+.popup__box.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup__box_close {
+  background: #1D2539;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.popup__box_close:hover {
+  background: #0f1115;
+}
+
+/* Popup Overley */
+.popup__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(9, 9, 9, 0.5);
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.popup__box.show + .popup__overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 12-load-more styles */
+.loadmore-body {
+  font-family: "YekanBakh";
+  line-height: 1.5;
+  padding: 85px 0;
+}
+
+.loadmore {
+  width: 1008px;
+  margin: 0 auto;
+}
+.loadmore__header {
+  text-align: center;
+}
+.loadmore__header_title {
+  font-family: "YekanBakh Heavy";
+  font-size: 30px;
+  margin-bottom: 4px;
+}
+.loadmore__content {
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  padding: 24px 8px 38px 24px;
+  position: relative;
+}
+.loadmore__content_text {
+  height: 288px;
+  overflow: hidden;
+  direction: ltr; /* for scrollbar apeare in right */
+  padding-right: 8px;
+  text-align: right;
+}
+.loadmore__content_shadow {
+  background-image: linear-gradient(0deg, #f5f5f5 0%, rgba(245, 245, 245, 0.54) 71.07%, rgba(245, 245, 245, 0) 100%);
+  width: 100%;
+  height: 158px;
+  position: absolute;
+  bottom: 90px;
+  right: 0;
+  left: 0;
+}
+.loadmore__content_btn {
+  width: 302px;
+  height: 48px;
+  border-radius: 8px;
+  background: #eb5e28;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: #fff;
+  font: inherit;
+  margin: 0 auto;
+  margin-top: 24px;
+  font-family: "YekanBakh Medium";
+}
+.loadmore__content_btn-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.close-btn {
+  display: none;
+}
+
+.loadmore__content.show .loadmore__content_text {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.loadmore__content.show .loadmore__content_shadow {
+  display: none;
+}
+
+.loadmore__content.show .loadmore__content_btn {
+  background: #fff;
+  border: 1px solid #eb5e28;
+  color: #eb5e28;
+}
+
+.loadmore__content.show .close-btn {
+  display: block;
+}
+
+.loadmore__content.show .open-btn {
+  display: none;
+}
+
+/* Custom Scrollbar */
+.loadmore__content_text::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+  direction: rtl;
+}
+
+.loadmore__content_text::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 50px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.loadmore__content_text::-webkit-scrollbar-thumb:hover {
+  background: #878787;
+}
+
 /*# sourceMappingURL=style.css.map */
