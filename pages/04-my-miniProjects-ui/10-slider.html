@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8"> <!-- for show farsi text in Linux Server -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="کلمات کلیدی پروژه برای بالابردن سئو" />
+    <meta name="description" content="توضیحی از پروژه" />
+    <meta name="outher" content="مهندس علیرضا خیاطپور" />
+
+    <link rel="icon" href="../img/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <title>Slider Component</title>
+</head>
+<!-- //todo: style -->
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #fafafa;
+    }
+
+    .shopping__right svg {
+        width: 15px;
+        height: 15px;
+        color: #f54100;
+    }
+
+    .percent {
+        font-size: .85rem;
+        font-weight: bold;
+        color: #0000ff;
+        background: #d9e8fa;
+        padding: 2px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .price1 {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .img-star {
+        width: 20px;
+        height: 20px;
+    }
+
+    .digit-percent {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .card {
+        transition: .5s;
+        position: relative;
+    }
+
+    .card:hover {
+        box-shadow: 4px 4px 4px #c9c8c8;
+        cursor: pointer;
+
+    }
+
+    .card_overley {
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(255, 255, 255, .3), rgba(255, 255, 255, 0));
+        opacity: 0;
+        transition: .5s;
+    }
+
+    .card_overley:hover {
+        opacity: 1;
+    }
+
+    .card-text {
+        height: 90px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    ::selection {
+        color: #000;
+        background: #ffff00;
+    }
+
+    [type="text"] {
+        background-color: #f697f1 !important;
+    }
+
+    .box {
+        margin-top: 50px;
+        ;
+        width: clamp(300px, 20%, 800px);
+        height: 300px;
+        border: 1px solid #000;
+        background-image: url("../img/shop/img2.jpg");
+        background-color: #f54100;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+<!-- //todo: body -->
+
+<body class="mt-5">
+    <div class="container ">
+        <div class="row">
+            <div class="col-12">
+                <div class="shopping d-flex justify-content-between align-items-center">
+                    <div class="shopping__right">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+                            </svg>
+                        </span>
+                        <span class="fw-bold">جدیدترین محصولات Baseus </span>
+
+                    </div>
+                    <div class="shopping__left">
+                        <a href="#">نمایش همه</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-3 mt-3">
+                <div class="card">
+                    <div class="card_overley"></div>
+                    <img class="card-img-top" src="../img/shop/img1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold">مشخصات محصول</h6>
+                        <p class="card-text">
+                            کابل لایتینگ هوشمند بیسوس Baseus C-shaped Lighting Cable lm
+                            کابل لایتینگ هوشمند بیسوس Baseus C-shaped Lighting Cable lm
+                            کابل لایتینگ هوشمند بیسوس Baseus C-shaped Lighting Cable lm
+                        </p>
+                        <div class="discount d-flex align-items-center ">
+                            <span class="me-2 percent">12%</span>
+                            <span class="text-decoration-line-through text-muted price1">320.000</span>
+                        </div>
+                        <div class="pricing d-flex justify-content-between">
+                            <div class="price2">
+                                <span class="fw-bold">275.000</span>
+                                <span class="text-muted">تومان</span>
+                            </div>
+                            <div class="star d-flex align-items-center">
+                                <span class="digit-percent">2.5</span>
+                                <span class="star-icon">
+                                    <img src="../img/shop/icons8-star-48.png" class="img-star" alt="star">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 mt-3">
+                <div class="card">
+                    <div class="card_overley"></div>
+                    <img class="card-img-top" src="../img/shop/img2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold">مشخصات محصول</h6>
+                        <p class="card-text">
+                            کابل لایتینگ هوشمند بیسوس Baseus C-shaped Lighting Cable lm
+                        </p>
+                        <div class="discount d-flex align-items-center ">
+                            <span class="me-2 percent">12%</span>
+                            <span class="text-decoration-line-through text-muted price1">320.000</span>
+                        </div>
+                        <div class="pricing d-flex justify-content-between">
+                            <div class="price2">
+                                <span class="fw-bold">275.000</span>
+                                <span class="text-muted">تومان</span>
+                            </div>
+                            <div class="star d-flex align-items-center">
+                                <span class="digit-percent">2.5</span>
+                                <span class="star-icon">
+                                    <img src="../img/shop/icons8-star-48.png" class="img-star" alt="star">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 mt-3">
+                <div class="card">
+                    <div class="card_overley"></div>
+                    <img class="card-img-top" src="../img/shop/img3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold">مشخصات محصول</h6>
+                        <p class="card-text">
+                            کابل لایتینگ هوشمند بیسوس Baseus C-shaped Lighting Cable lm
+                        </p>
+                        <div class="discount d-flex align-items-center ">
+                            <span class="me-2 percent">12%</span>
+                            <span class="text-decoration-line-through text-muted price1">320.000</span>
+                        </div>
+                        <div class="pricing d-flex justify-content-between">
+                            <div class="price2">
+                                <span class="fw-bold">275.000</span>
+                                <span class="text-muted">تومان</span>
+                            </div>
+                            <div class="star d-flex align-items-center">
+                                <span class="digit-percent">2.5</span>
+                                <span class="star-icon">
+                                    <img src="../img/shop/icons8-star-48.png" class="img-star" alt="star">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 mt-3">
+                <div class="card ">
+                    <div class="card_overley"></div>
+                    <img class="card-img-top" src="../img/shop/img4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold">مشخصات محصول</h6>
+                        <p class="card-text">
+                            کابل لایتینگ هوشمند بیسوس Baseus C-shaped Lighting Cable
+                        </p>
+                        <div class="discount d-flex align-items-center ">
+                            <span class="me-2 percent">12%</span>
+                            <span class="text-decoration-line-through text-muted price1">320.000</span>
+                        </div>
+                        <div class="pricing d-flex justify-content-between">
+                            <div class="price2">
+                                <span class="fw-bold ali ">275.000</span>
+                                <span class="text-muted">تومان</span>
+                            </div>
+                            <div class="star d-flex align-items-center">
+                                <span class="digit-percent">2.5</span>
+                                <span class="star-icon">
+                                    <img src="../img/shop/icons8-star-48.png" class="img-star" alt="star">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <p class="digit position-relative ali">
+            این یک پروژه تمرینی هست که در آن محصولات یک فروشگاه آنلاین نشان داده شده است. با hover کردن روی هرکدام از
+            محصولات یک box-shoadow سبز رنگ کنار Card مربوط انجام میشه. همچنین از سودو المنت ::selection استفاده شده که
+            گر همین متن را انتخاب کنیم بکگراند به رنگ زرد درمیاید به جای آبی.
+        </p>
+    </div>
+    <input type="text" class="form-control w-50" placeholder="چیزی وارد کنید"><br>
+    <input type="email" class="form-control w-50" placeholder="لطفا پسورد را وارد کنید">
+
+    <div class="box">
+
+    </div>
+
+
+
+    <div align="center" class="return mt-5">
+        <a href="/" class="button button__danger">بازگشت</a>
+    </div>
+</body>
+
+<!-- //todo: jsvascript -->
+<script>
+var age = 18 
+if(true){
+    console.log("block log is : ", age)
+    var age = 20
+}
+console.log("global log is : ", age)
+
+</script>
+</html>

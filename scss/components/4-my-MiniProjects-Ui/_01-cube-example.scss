@@ -1,0 +1,54 @@
+/* todo: my-MiniProjects: 01-cube-example-ui  */
+.pseudo-practice__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.pseudo-practice__wraper {
+}
+.pseudo-practice__card {
+  margin: 0 auto;
+  height: 500px;
+}
+.pseudo-practice__card_body {
+}
+/* todo: Hero-image */
+.hero-image {
+  position: relative;
+  height: 100%;
+}
+.cube {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(119, 193, 227);
+  background-image: url(../img/03-my-miniproject-ui/react-square.png);
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: rotate(-25deg) skew(25deg);
+  box-shadow: -50px 50px 20px rgba(50, 50, 50, 0.15);
+}
+
+.cube::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  transform: skewY(-45deg);
+  left: -20px;
+  bottom: -10px;
+  background: rgb(154, 189, 221);
+}
+
+.cube::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  bottom: -20px;
+  left: -10px;
+  transform: skewX(-45deg);
+  background-color: rgb(188, 200, 221);
+}
