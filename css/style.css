@@ -1514,12 +1514,8 @@ select {
 .cube {
   width: 80px;
   height: 80px;
-  background-color: rgb(119, 193, 227);
-  background-image: url(../img/03-my-miniproject-ui/react-square.png);
   background-size: cover;
   position: absolute;
-  top: 50px;
-  left: 50%;
   transform: rotate(-25deg) skew(25deg);
   box-shadow: -50px 50px 20px rgba(50, 50, 50, 0.15);
 }
@@ -1532,7 +1528,6 @@ select {
   transform: skewY(-45deg);
   left: -20px;
   bottom: -10px;
-  background: rgb(154, 189, 221);
 }
 
 .cube::after {
@@ -1543,7 +1538,66 @@ select {
   bottom: -20px;
   left: -10px;
   transform: skewX(-45deg);
+}
+
+#react {
+  left: 100px;
+  bottom: 80px;
+  background-color: rgb(119, 193, 227);
+  background-image: url(../img/03-my-miniproject-ui/react-square.png);
+}
+
+#react::before {
+  background: rgb(154, 189, 221);
+}
+
+#react::after {
   background-color: rgb(188, 200, 221);
+}
+
+#js {
+  left: 250px;
+  bottom: 240px;
+  background-color: rgb(119, 227, 186);
+  background-image: url(../img/03-my-miniproject-ui/javascript-square.png);
+}
+
+#js::before {
+  background: rgb(154, 221, 202);
+}
+
+#js::after {
+  background-color: rgb(188, 221, 212);
+}
+
+#css {
+  left: 450px;
+  bottom: 200px;
+  background-color: rgb(227, 119, 191);
+  background-image: url(../img/03-my-miniproject-ui/css-square.png);
+}
+
+#css::before {
+  background: rgb(221, 154, 207);
+}
+
+#css::after {
+  background-color: rgb(221, 188, 211);
+}
+
+#html {
+  left: 350px;
+  bottom: 40px;
+  background-color: rgb(175, 119, 227);
+  background-image: url(../img/03-my-miniproject-ui/html-square.png);
+}
+
+#html::before {
+  background: rgb(189, 154, 221);
+}
+
+#html::after {
+  background-color: rgb(205, 188, 221);
 }
 
 /* todo: my-MiniProjects: 02-dark-light-project-UI  */
