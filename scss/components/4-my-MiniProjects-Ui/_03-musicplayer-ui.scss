@@ -1,1 +1,186 @@
 /* todo: my-MiniProjects: 03-Music Player UI */
+/*urilities*/
+* {
+  /* margin: 0 !important;
+     padding: 0 !important; */
+  box-sizing: border-box;
+}
+
+/* 
+.item1 {
+  background-color: #8a2be2;
+  background-color: #34e22b;
+   background-color: #f64089;
+   background-color: #c9f80f;
+}
+ */
+/* .parallax {
+  background-image: url("../image/3.jpg");
+  background-size: cover;
+  background-attachment: scroll; 
+  height: 100vh;
+}
+.test {
+  height: 1000px;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/* .whatsapp {
+  padding: 10px;
+  background: blue;
+  color: white;
+} */
+.music-player-body {
+  margin: 0;
+  min-height: 100vh;
+  background: #c9ced3;
+  font-family: Nunito, sans-serif;
+  font-size: 12px;
+}
+
+.bg-container {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+}
+
+.bg-container #background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  filter: blur(50px);
+  -webkit-filter: blur(50px);
+  transform: scale(1.1);
+}
+
+.player-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.music-player__wrapper {
+  height: 500px;
+  width: 400px;
+  min-width: 360px;
+  background: #e7e7e7;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+.img-wrapper {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 20%;
+  right: 50%;
+  transform: translate(50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 30px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.img-wrapper img {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  object-fit: cover;
+  border-radius: 20px;
+
+  transition: 2s;
+}
+
+.img-wrapper img.active {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.music-titlee {
+  font-size: 25px;
+  text-align: center;
+}
+
+#music-artist {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+
+/* Progress */
+.duration-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  direction: ltr;
+}
+.progress-container {
+  height: 4px;
+  width: 90%;
+  margin: 5px auto 20px;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  direction: ltr;
+}
+
+.progress {
+  background: #242323;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+/* Controls */
+.player-controls {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.player-controls .ctrl-btn {
+  color: #333;
+  font-size: 24px;
+}
+
+.player-controls .ctrl-btn:hover {
+  color: #1a1a1a;
+}
+
+.player-controls .play-btn {
+  font-size: 36px;
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .player-container {
+     width: 360px;
+     margin: 0 auto;
+  }
+  .music-player__wrapper {
+    height: 500px;
+    width: 100%;
+  }
+  
+  .music-titlee {
+    font-size: 20px;
+  }
+
+  #music-artist {
+    font-size: 15px;
+  }
+}
