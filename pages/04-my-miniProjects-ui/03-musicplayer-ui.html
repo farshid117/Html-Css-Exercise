@@ -20,100 +20,45 @@
     <title>sidebar-component</title>
 
 </head>
-<style>
-    .unit-test {
-        text-align: center;
-    }
 
-    .box {
-        background: lightsalmon;
-        border: 10px solid #000;
-        border-radius: 10px;
-        margin: 0 auto;
-        margin-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        font-weight: bold;
-        padding: 20px;
-
-        width: 20rem;
-        height: 20rem;
-    }
-
-    .box span {
-        font-size: .75em;
-        font-weight: normal;
-    }
-
-    h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 2rem;
-    }
-
-    h2 span {
-        color: green;
-        font-size: .75em;
-    }
-     .box2 {
-        background: lightgreen;
-        border: 1px solid #000;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        font-weight: bold;
-        
-        width: 50vw;
-        margin: 0 auto 50px;
-        height: 50vh;
-    }
-
-    .box2 span {
-        font-size: .75em;
-        font-weight: normal;
-    }
-    /* max-width(height) & min-width(height) */
-    
-</style>
-
-<body>
-    <h1 class="unit-test">تست Css-Unit</h1>
-    <div class="box">
-        css unit
-        <span>rem-em</span>
+  <body class="music-player-body">
+    <!-- <a href="https://wa.me/09170431514" class="whatsapp">whatsapp</a> -->
+    <!--  <div class="test"></div>
+    <section class="parallax">section1</section>
+    <div class="test"></div> -->
+    <div class="bg-container">
+      <img src="../image/cover1.jpg" alt="" id="background-img" />
     </div>
-    <br>
-    <hr>
-    <h2 style="margin-top: 20px;">
-        تعداد خرید های امروز
-        <span class="price-number">26</span>
-    </h2>
+    <div class="player-container">
+      <!-- Song -->
+      <div class="music-player__wrapper">
+        <div class="img-wrapper">
+          <img src="" alt="" id="cover" class="active" />
+        </div>
+        <h2 class="music-titlee"></h2>
+        <h3 id="music-artist"></h3>
+        <audio src=""></audio>
 
-    <hr style="margin-bottom: 30px;">
-
-    <div class="box2">
-        css unit
-        <span>vw - vh</span>
+        <!-- Progress -->
+        <div id="musicplayer__progressbar">
+          <div class="duration-wrapper">
+            <span id="current-time">00:00</span>
+            <span id="duration">00:00</span>
+          </div>
+          <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <div class="player-controls">
+          <i class="fas fa-backward ctrl-btn" id="prev" title="Prev-song"></i>
+          <i class="fas fa-play play-btn ctrl-btn" id="play" title="Play"></i>
+          <i class="fas fa-forward ctrl-btn" id="next" title="Next-song"></i>
+        </div>
+      </div>
     </div>
+  </body>
 
-    <hr style="margin-bottom: 30px;">
-    
-
-
-
-
-    <div align="center">
-        <a href="/" class="button button__red">بازگشت</a>
-    </div>
-
-    
-</body>
 <script>
 
 </script>
