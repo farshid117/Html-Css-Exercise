@@ -1813,20 +1813,15 @@ select {
 .main-music img {
   display: block;
   height: 200px;
+  width: 100%;
   object-fit: cover;
   transition: all 0.4s ease;
   border-radius: 10px;
 }
 
 .main-music:hover img {
-  box-shadow: 0 0 25px #5d5d5d;
+  box-shadow: 0 0 25px 0 #5d5d5d;
   /* transform: translateY(-5px); */
-}
-
-.main-music:hover i {
-  visibility: visible;
-  opacity: 1;
-  cursor: pointer;
 }
 
 .music-list-btn {
@@ -1838,9 +1833,9 @@ select {
   transform: translate(50%, -50%);
   width: 66px;
   height: 50px;
-  line-height: 50px;
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 10px;
   color: #fff;
   visibility: hidden;
@@ -1848,9 +1843,19 @@ select {
   transition: 0.4s;
 }
 
+.main-music:hover .music-list-btn {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+}
+
 .music-list-btn.active {
   visibility: visible;
   opacity: 1;
+}
+
+.add-height {
+  height: 100px;
 }
 
 /* todo: my-MiniProjects: 05-TodoList UI */
