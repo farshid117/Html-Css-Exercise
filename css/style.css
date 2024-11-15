@@ -1864,7 +1864,7 @@ select {
 /* 04-my-miniprojects=ui --> 07-parallax-simple */
 .section1 {
   height: 100vh;
-  background-image: url("../image/khodam10.jpg"); /* تصویر خودتان را اینجا بگذارید */
+  background-image: url("../img/03-my-miniproject-ui/04-parallax-simple/khodam10.jpg"); /* تصویر خودتان را اینجا بگذارید */
   background-size: 100% 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -1880,7 +1880,7 @@ select {
 /* سکشن دوم */
 .section2 {
   height: 100vh;
-  background-image: url("../image/khodam3.jpg"); /* تصویر خودتان را اینجا بگذارید */
+  background-image: url("../img/03-my-miniproject-ui/04-parallax-simple/khodam3.jpg"); /* تصویر خودتان را اینجا بگذارید */
   background-size: 100% 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -1895,7 +1895,7 @@ select {
 
 .section3 {
   height: 100vh;
-  background-image: url("../image/khodam5.jpg"); /* تصویر خودتان را اینجا بگذارید */
+  background-image: url("../img/03-my-miniproject-ui/04-parallax-simple/khodam5.jpg"); /* تصویر خودتان را اینجا بگذارید */
   background-size: 100% 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -1910,7 +1910,7 @@ select {
 
 .section4 {
   height: 100vh;
-  background-image: url("../image/3.jpg"); /* تصویر خودتان را اینجا بگذارید */
+  background-image: url("../img/03-my-miniproject-ui/04-parallax-simple/3.jpg"); /* تصویر خودتان را اینجا بگذارید */
   background-size: cover;
   background-position: center;
   background-attachment: scroll; /* تصویر حرکت می‌کند */
