@@ -53,5 +53,23 @@
     </div>
   </body>
   <!-- //todo: jsvascript -->
-  <script></script>
+  <script>
+    const section2Elm = document.querySelector(".section2");
+    const section3Elm = document.querySelector(".section3");
+
+    window.addEventListener("scroll", (event) => {
+      if (scrollY < innerHeight) {
+        section2Elm.style.backgroundAttachment = "scroll";
+      }
+      if (scrollY >= innerHeight) {
+        section2Elm.style.backgroundAttachment = "fixed";
+      }
+      if (scrollY < innerHeight * 2) {
+        section3Elm.style.backgroundAttachment = "scroll";
+      }
+      if (scrollY >= innerHeight * 2) {
+        section3Elm.style.backgroundAttachment = "fixed";
+      }
+    });
+  </script>
 </html>
