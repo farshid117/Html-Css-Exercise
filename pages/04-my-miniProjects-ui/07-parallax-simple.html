@@ -19,34 +19,48 @@
       referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../css/bootstrap-icons.css" />
     <link rel="stylesheet" href="../../css/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+      async></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/plugins/bgset/ls.bgset.min.js"
+      async></script>
 
-    <title>Tab Navigation component</title>
+    <title>Parallax Simple</title>
   </head>
   <!-- //todo: style -->
   <style></style>
 
   <!-- //todo: body -->
   <body>
-    <div class="section1">
+    <div
+      class="section1 lazyload lazy-bg"
+      data-bg="../../img/03-my-miniproject-ui/04-parallax-simple/2.jpg">
       <div>
         <p>سکشن اول: پس‌زمینه ثابت است.</p>
       </div>
     </div>
 
     <!-- سکشن دوم -->
-    <div class="section2">
+    <div
+      class="section2 lazyload lazy-bg"
+      data-bg="../../img/03-my-miniproject-ui/04-parallax-simple/khodam3.jpg">
       <div>
         <p>سکشن دوم: پس‌زمینه در حال حرکت است.</p>
       </div>
     </div>
     <!-- سکشن سوم -->
-    <div class="section3">
+    <div
+      class="section3 lazyload lazy-bg"
+      data-bg="../../img/03-my-miniproject-ui/04-parallax-simple/khodam5.jpg">
       <div>
         <p>سکشن سوم: پس‌زمینه در حال حرکت است.</p>
       </div>
     </div>
     <!-- سکشن چهارم -->
-    <div class="section4">
+    <div
+      class="section4 lazyload lazy-bg"
+      data-bg="../../img/03-my-miniproject-ui/04-parallax-simple/3.jpg">
       <div>
         <p>سکشن چهارم: پس‌زمینه در حال حرکت است.</p>
       </div>
@@ -70,6 +84,16 @@
       if (scrollY >= innerHeight * 2) {
         section3Elm.style.backgroundAttachment = "fixed";
       }
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+      const lazyBackgrounds = document.querySelectorAll(".lazyload");
+
+      lazyBackgrounds.forEach((lazyElement) => {
+        const bgImage = lazyElement.getAttribute("data-bg");
+        if (bgImage) {
+          lazyElement.style.backgroundImage = `url(${bgImage})`;
+        }
+      });
     });
   </script>
 </html>

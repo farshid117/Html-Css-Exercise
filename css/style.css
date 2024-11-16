@@ -1862,58 +1862,13 @@ select {
 /* todo: my-MiniProjects: 05-TodoList UI */
 /* todo: my-MiniProjects: 05-BookList UI */
 /* 04-my-miniprojects=ui --> 07-parallax-simple */
-.section1 {
+.lazy-bg {
   height: 100vh;
-  background-image: url("../img/03-my-miniproject-ui/04-parallax-simple/khodam10.jpg"); /* تصویر خودتان را اینجا بگذارید */
+  background-color: #ccc; /* رنگ پیش‌فرض */
   background-size: 100% 100vh;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed; /* تصویر ثابت می‌ماند */
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 2rem;
-}
-
-/* سکشن دوم */
-.section2 {
-  height: 100vh;
-  background-image: url("../img/03-my-miniproject-ui/04-parallax-simple/khodam3.jpg"); /* تصویر خودتان را اینجا بگذارید */
-  background-size: 100% 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: scroll; /* تصویر حرکت می‌کند */
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.section3 {
-  height: 100vh;
-  background-image: url("../img/03-my-miniproject-ui/04-parallax-simple/khodam5.jpg"); /* تصویر خودتان را اینجا بگذارید */
-  background-size: 100% 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: scroll; /* تصویر حرکت می‌کند */
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.section4 {
-  height: 100vh;
-  background-image: url("../img/03-my-miniproject-ui/04-parallax-simple/3.jpg"); /* تصویر خودتان را اینجا بگذارید */
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll; /* تصویر حرکت می‌کند */
+  background-attachment: fixed;
   color: white;
   display: flex;
   justify-content: center;
