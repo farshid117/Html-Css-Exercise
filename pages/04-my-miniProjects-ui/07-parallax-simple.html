@@ -35,7 +35,7 @@
   <body>
     <div
       class="section1 lazyload lazy-bg"
-      data-bg="../../img/03-my-miniproject-ui/04-parallax-simple/2.jpg">
+      data-bg="../../img/03-my-miniproject-ui/04-parallax-simple/3.jpg">
       <div>
         <p>سکشن اول: پس‌زمینه ثابت است.</p>
       </div>
@@ -85,15 +85,23 @@
         section3Elm.style.backgroundAttachment = "fixed";
       }
     });
-    document.addEventListener("DOMContentLoaded", () => {
-      const lazyBackgrounds = document.querySelectorAll(".lazyload");
+    document.addEventListener("DOMContentLoaded", function () {
+      const lazyBackgrounds = document.querySelectorAll(".lazy-bg");
 
-      lazyBackgrounds.forEach((lazyElement) => {
-        const bgImage = lazyElement.getAttribute("data-bg");
-        if (bgImage) {
-          lazyElement.style.backgroundImage = `url(${bgImage})`;
-        }
-      });
+      const lazyLoadBackgrounds = () => {
+        lazyBackgrounds.forEach((bg) => {
+          if (bg.getBoundingClientRect().top < window.innerHeight) {
+            const bgUrl = bg.dataset.bg;
+            if (bgUrl) {
+              bg.style.backgroundImage = `url('${bgUrl}')`;
+              bg.removeAttribute("data-bg");
+            }
+          }
+        });
+      };
+
+      window.addEventListener("scroll", lazyLoadBackgrounds);
+      lazyLoadBackgrounds(); // اجرا هنگام لود اولیه
     });
   </script>
 </html>
