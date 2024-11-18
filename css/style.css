@@ -1875,6 +1875,7 @@ select {
   align-items: center;
   text-align: center;
   font-size: 2rem;
+  transition: background-image 0.3s ease-in-out;
 }
 
 /* css-components --> 9-popup styles */
