@@ -22,10 +22,13 @@
 
 <!-- //todo: body -->
 
-</body>
+</body class="parallax-Dinamic-body">
  <!-- پارالاکس استاتیک -->
   <div class="parallax"></div>
-
+  <div class="content">
+    <h1>Welcome to Custom Parallax</h1>
+    <p>Scroll to see the effect!</p>
+  </div>
 
   <!-- پارالاکس داینامیک -->
   <div class="parallax-dynamic"></div>
@@ -39,8 +42,9 @@
   // اضافه کردن کلاس اسکرول برای پارالاکس پویا
     document.addEventListener('scroll', () => {
       const scrollable = document.querySelector('.parallax-dynamic');
-      if (window.scrollY > 50) {
-        scrollable.classList.add('scrolled');
+      if (window.scrollY > innerHeight/2) {
+            scrollable.classList.add('scrolled');
+      
       } else {
         scrollable.classList.remove('scrolled');
       }

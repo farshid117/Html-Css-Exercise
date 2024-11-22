@@ -1,5 +1,5 @@
 // 04-My-Miniprojects-Ui -> 08-parallax-Dinamic
-  body {
+  .parallax-Dinamic-body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
@@ -27,11 +27,11 @@
     background-image: url('../img/03-my-miniproject-ui/04-parallax-simple/2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 0%; /* شروع از بالا */
-    transition: background-position 1s ease-out; /* حرکت نرم */
+    background-position: bottom; /* شروع از بالا */
+    transition: background-position 2s ease-out; /* حرکت نرم */
   }
 
   /* اسکرول پویا */
 .parallax-dynamic.scrolled {
-    background-position: 50% 50%; /* حرکت به مرکز */
+    background-position: top; /* حرکت به مرکز */
   }
