@@ -1878,6 +1878,43 @@ select {
   transition: background-image 0.3s ease-in-out;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* استایل بخش پارالاکس */
+.parallax {
+  height: 100vh; /* ارتفاع فول اسکرین */
+  background-image: url("https://source.unsplash.com/1600x900/?nature,water");
+  background-attachment: fixed; /* پس‌زمینه ثابت */
+  background-position: center; /* شروع از مرکز */
+  background-repeat: no-repeat; /* بدون تکرار */
+  background-size: cover; /* پوشش کامل */
+}
+
+/* استایل بخش محتوای معمولی */
+.content {
+  padding: 20px;
+  background: white;
+  text-align: center;
+}
+
+/* برای تغییر پویا در پارالاکس */
+.parallax-dynamic {
+  height: 100vh;
+  background-image: url("https://source.unsplash.com/1600x900/?mountain");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%; /* شروع از بالا */
+  transition: background-position 0.2s ease-out; /* حرکت نرم */
+}
+
+/* اسکرول پویا */
+.scrolled .parallax-dynamic {
+  background-position: 50% 50%; /* حرکت به مرکز */
+}
+
 /* my-MiniProjects-UI --> 9-scroll-Spy */
 .popup-proj-body {
   font-family: "YekanBakh";
