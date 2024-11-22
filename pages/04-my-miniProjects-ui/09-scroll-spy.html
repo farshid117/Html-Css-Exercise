@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="../../css/bootstrap-icons.css" />
     <link rel="stylesheet" href="../../css/style.css">
 
-    <title>popup component</title>
+    <title>Scroll-Spy</title>
 </head>
 
 <!-- //todo: body -->
 
-<body class="popup-proj-body">
+<body class="scroll-spy-body">
     <svg class="svg-sprite">
         <symbol id="arrow-left" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10.07 5.93L4 12l6.07 6.07" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
@@ -35,49 +35,11 @@
         </symbol>
     </svg>
 
-    <button class="popup__btn">
-        <span>عضویت در خبرنامه</span>
-        <svg>
-            <use href="#arrow-left"></use>
-        </svg>
-    </button>
-
-    <div class="popup__box">
-        <div class="popup__box_close">
-            <svg>
-                <use href="#cancel"></use>
-            </svg>
-        </div>
-        <img src="../../img/mini-projects/9-popup/vector.png" alt="">
-        <div class="popup__box_wrapper">
-            <p class="popup__box_title">شماره شما ثبت شد</p>
-            <p class="popup__box_text">و با موفقیت عضو خبرنامه شدید 😇 </p>
-        </div>
-    </div>
-
-    <div class="popup__overlay"></div>
 
 
     <!-- //todo: jsvascript -->
     <script>
-        const popupBtn = document.querySelector(".popup__btn")
-        const popupBox = document.querySelector(".popup__box")
-        const closeBtn = document.querySelector(".popup__box_close")
-        const overlayElm = document.querySelector(".popup__overlay")
-
-        popupBtn.addEventListener("click",(event) => {
-            popupBox.classList.add("show")
-            popupBtn.style.display = "none"
-        })
-        closeBtn.addEventListener("click",(event) => {
-            popupBox.classList.remove("show")
-            popupBtn.style.display = "flex" 
-        })
-        overlayElm.addEventListener("click",(event) => {
-            popupBox.classList.remove("show")
-             popupBtn.style.display = "flex" 
-            
-        })
+        
     </script>
 </body>
 
