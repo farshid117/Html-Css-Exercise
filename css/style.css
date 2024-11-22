@@ -1878,9 +1878,60 @@ select {
   transition: background-image 0.3s ease-in-out;
 }
 
-/* css-components --> 9-popup styles */
+/* my-MiniProjects-UI --> 9-scroll-Spy */
 .popup-proj-body {
   font-family: "YekanBakh";
+}
+
+/* استایل سکشن‌ها */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+#section1 {
+  background-color: #f4a261;
+}
+
+#section2 {
+  background-color: #2a9d8f;
+}
+
+#section3 {
+  background-color: #e9c46a;
+}
+
+/* استایل منوی ناوبری */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #264653;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.nav-link.active {
+  background-color: #e76f51;
+  border-radius: 5px;
 }
 
 /* 12-load-more styles */
