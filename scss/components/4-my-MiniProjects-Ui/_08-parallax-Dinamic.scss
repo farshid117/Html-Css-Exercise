@@ -7,7 +7,7 @@
   /* استایل بخش پارالاکس */
   .parallax {
     height: 100vh; /* ارتفاع فول اسکرین */
-    background-image: url('https://source.unsplash.com/1600x900/?nature,water');
+    background-image: url('../img/03-my-miniproject-ui/04-parallax-simple/3.jpg');
     background-attachment: fixed; /* پس‌زمینه ثابت */
     background-position: center; /* شروع از مرکز */
     background-repeat: no-repeat; /* بدون تکرار */
@@ -24,14 +24,14 @@
   /* برای تغییر پویا در پارالاکس */
   .parallax-dynamic {
     height: 100vh;
-    background-image: url('https://source.unsplash.com/1600x900/?mountain');
+    background-image: url('../img/03-my-miniproject-ui/04-parallax-simple/2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 0%; /* شروع از بالا */
-    transition: background-position 0.2s ease-out; /* حرکت نرم */
+    transition: background-position 1s ease-out; /* حرکت نرم */
   }
 
   /* اسکرول پویا */
-  .scrolled .parallax-dynamic {
+.parallax-dynamic.scrolled {
     background-position: 50% 50%; /* حرکت به مرکز */
   }
