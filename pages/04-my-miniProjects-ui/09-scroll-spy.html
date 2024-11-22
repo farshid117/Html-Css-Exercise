@@ -1,57 +1,106 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
-<head>
-    <meta charset="UTF-8"> <!-- for show farsi text in Linux Server -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- for show farsi text in Linux Server -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="کلمات کلیدی پروژه برای بالابردن سئو" />
     <meta name="description" content="توضیحی از پروژه" />
     <meta name="outher" content="مهندس علیرضا خیاطپور" />
 
-    <link rel="icon" href="../img/favicon.ico" type="image/png">
+    <link rel="icon" href="../img/favicon.ico" type="image/png" />
 
-    <link rel="stylesheet" href="../../css/all.css">
-    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../../css/all.css" />
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="../../css/bootstrap-icons.css" />
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css" />
 
     <title>Scroll-Spy</title>
-</head>
+  </head>
 
-<!-- //todo: body -->
+  <!-- //todo: body -->
 
-<body class="scroll-spy-body">
+  <body class="scroll-spy-body">
     <svg class="svg-sprite">
-        <symbol id="arrow-left" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.07 5.93L4 12l6.07 6.07" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                stroke-linecap="round" stroke-linejoin="round" />
-            <path opacity=".4" d="M21 12H4.17" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                stroke-linecap="round" stroke-linejoin="round" />
-        </symbol>
-        <symbol id="cancel" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.757 7.757l8.485 8.486M7.757 16.243l8.485-8.486" stroke="currentColor" stroke-width="1.5"
-                stroke-linecap="round" stroke-linejoin="round" />
-        </symbol>
+      <symbol
+        id="arrow-left"
+        width="24"
+        height="24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M10.07 5.93L4 12l6.07 6.07"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path
+          opacity=".4"
+          d="M21 12H4.17"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+      </symbol>
+      <symbol
+        id="cancel"
+        width="24"
+        height="24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M7.757 7.757l8.485 8.486M7.757 16.243l8.485-8.486"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+      </symbol>
     </svg>
 
-  <nav id="navbar">
-    <ul>
-      <li><a href="#section1" class="nav-link">بخش ۱</a></li>
-      <li><a href="#section2" class="nav-link">بخش ۲</a></li>
-      <li><a href="#section3" class="nav-link">بخش ۳</a></li>
-    </ul>
-  </nav>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#section1" class="nav-link">بخش ۱</a></li>
+        <li><a href="#section2" class="nav-link">بخش ۲</a></li>
+        <li><a href="#section3" class="nav-link">بخش ۳</a></li>
+      </ul>
+    </nav>
 
-  <div id="section1" class="section">بخش ۱</div>
-  <div id="section2" class="section">بخش ۲</div>
-  <div id="section3" class="section">بخش ۳</div>
+    <div id="section1" class="section">بخش ۱</div>
+    <div id="section2" class="section">بخش ۲</div>
+    <div id="section3" class="section">بخش ۳</div>
 
     <!-- //todo: jsvascript -->
     <script>
+      // گرفتن لینک‌های ناوبری
+      const navLinks = document.querySelectorAll(".nav-link");
 
+      // Scroll Spy: هایلایت کردن لینک‌ها هنگام اسکرول
+      window.addEventListener("scroll", () => {
+        navLinks.forEach((link) => {
+          const section = document.querySelector(link.getAttribute("href"));
+          const rect = section.getBoundingClientRect(); // گرفتن مختصات بخش
+
+          // بررسی اینکه بخش در پنجره دید کاربر است یا نه
+          if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        });
+      });
+
+      // Smooth Scroll برای کلیک روی لینک‌ها
+      navLinks.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault(); // جلوگیری از رفتار پیش‌فرض لینک
+
+          const section = document.querySelector(link.getAttribute("href"));
+          section.scrollIntoView({ behavior: "smooth", block: "start" }); // اسکرول نرم
+        });
+      });
     </script>
-</body>
-
-
+  </body>
 </html>
