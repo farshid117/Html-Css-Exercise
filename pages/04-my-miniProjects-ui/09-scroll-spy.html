@@ -62,7 +62,9 @@
 
     <nav id="navbar">
       <ul>
-        <li><a href="#section1" class="nav-link current-active active ">بخش ۱</a></li>
+        <li>
+          <a href="#section1" class="nav-link default-active active">بخش ۱</a>
+        </li>
         <li><a href="#section2" class="nav-link">بخش ۲</a></li>
         <li><a href="#section3" class="nav-link">بخش ۳</a></li>
       </ul>
@@ -76,10 +78,10 @@
     <script>
       // گرفتن لینک‌های ناوبری
       const navLinks = document.querySelectorAll(".nav-link");
-      const activeLink = document.querySelector(".current-active");
+      const defaultActiveLink = document.querySelector(".default-active");
 
       // a: ذخیره لینک فعال فعلی
-      let currentActiveLink = activeLink;
+      let currentActiveLink = defaultActiveLink;
 
       // Scroll Spy: بهینه‌سازی هایلایت لینک‌ها هنگام اسکرول
       window.addEventListener("scroll", () => {
@@ -89,11 +91,9 @@
 
           // b: بررسی اینکه بخش در محدوده دید است یا نه
           if (rect.top >= 0 && rect.top < innerHeight / 2) {
-            if (currentActiveLink !== link) {
-              // c: اگر لینک فعال تغییر کند
-              if (currentActiveLink) {
-                currentActiveLink.classList.remove("active");
-              }
+            if (currentActiveLink !== link) { // c: اگر لینک فعال تغییر کند
+
+              currentActiveLink.classList.remove("active");
               link.classList.add("active");
               currentActiveLink = link; // d: به‌روزرسانی لینک فعال
             }
