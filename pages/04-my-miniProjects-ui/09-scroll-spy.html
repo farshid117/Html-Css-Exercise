@@ -62,7 +62,7 @@
 
     <nav id="navbar">
       <ul>
-        <li><a href="#section1" class="nav-link">بخش ۱</a></li>
+        <li><a href="#section1" class="nav-link current-active active ">بخش ۱</a></li>
         <li><a href="#section2" class="nav-link">بخش ۲</a></li>
         <li><a href="#section3" class="nav-link">بخش ۳</a></li>
       </ul>
@@ -76,9 +76,10 @@
     <script>
       // گرفتن لینک‌های ناوبری
       const navLinks = document.querySelectorAll(".nav-link");
+      const activeLink = document.querySelector(".current-active");
 
       // a: ذخیره لینک فعال فعلی
-      let currentActiveLink = null;
+      let currentActiveLink = activeLink;
 
       // Scroll Spy: بهینه‌سازی هایلایت لینک‌ها هنگام اسکرول
       window.addEventListener("scroll", () => {
