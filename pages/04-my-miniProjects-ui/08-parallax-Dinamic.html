@@ -40,15 +40,38 @@
 <!-- //todo: jsvascript -->
 <script>
   // اضافه کردن کلاس اسکرول برای پارالاکس پویا
-    document.addEventListener('scroll', () => {
-      const scrollable = document.querySelector('.parallax-dynamic');
-      if (window.scrollY > innerHeight/2) {
-            scrollable.classList.add('scrolled');
-      
-      } else {
-        scrollable.classList.remove('scrolled');
+   let currentActiveLink = null;
+
+// Scroll Spy: بهینه‌سازی هایلایت لینک‌ها هنگام اسکرول
+window.addEventListener("scroll", () => {
+  navLinks.forEach((link) => {
+    const section = document.querySelector(link.getAttribute("href"));
+    const rect = section.getBoundingClientRect();
+
+    // b: بررسی اینکه بخش در محدوده دید است یا نه
+    if (rect.top >= 0 && rect.top < innerHeight / 2) {
+      if (currentActiveLink !== link) {
+        // c: اگر لینک فعال تغییر کند
+        if (currentActiveLink) {
+          currentActiveLink.classList.remove("active");
+        }
+        link.classList.add("active");
+        currentActiveLink = link; // d: به‌روزرسانی لینک فعال
       }
-    });
+    }
+  });
+});
+
+// Smooth Scroll برای کلیک روی لینک‌ها
+navLinks.forEach((link) => {
+	link.addEventListener("click", (event) => {
+	  event.preventDefault(); // جلوگیری از رفتار پیش‌فرض لینک
+	
+	  const section = document.querySelector(link.getAttribute("href"))
+	  section.scrollIntoView({ behavior: "smooth", block: "start" })
+	   
+	})
+})
 </script>
 
 </html>

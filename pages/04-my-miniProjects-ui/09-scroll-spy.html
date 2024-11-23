@@ -77,17 +77,25 @@
       // گرفتن لینک‌های ناوبری
       const navLinks = document.querySelectorAll(".nav-link");
 
-      // Scroll Spy: هایلایت کردن لینک‌ها هنگام اسکرول
+      // a: ذخیره لینک فعال فعلی
+      let currentActiveLink = null;
+
+      // Scroll Spy: بهینه‌سازی هایلایت لینک‌ها هنگام اسکرول
       window.addEventListener("scroll", () => {
         navLinks.forEach((link) => {
           const section = document.querySelector(link.getAttribute("href"));
-          const rect = section.getBoundingClientRect(); // گرفتن مختصات بخش
+          const rect = section.getBoundingClientRect();
 
-          // بررسی اینکه بخش در پنجره دید کاربر است یا نه
-          if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
-            link.classList.add("active");
-          } else {
-            link.classList.remove("active");
+          // b: بررسی اینکه بخش در محدوده دید است یا نه
+          if (rect.top >= 0 && rect.top < innerHeight / 2) {
+            if (currentActiveLink !== link) {
+              // c: اگر لینک فعال تغییر کند
+              if (currentActiveLink) {
+                currentActiveLink.classList.remove("active");
+              }
+              link.classList.add("active");
+              currentActiveLink = link; // d: به‌روزرسانی لینک فعال
+            }
           }
         });
       });
