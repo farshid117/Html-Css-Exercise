@@ -2063,6 +2063,7 @@ html {
   visibility: hidden;
   opacity: 0;
   transition: 0.4s;
+  z-index: 10;
 }
 
 .modall.show {
@@ -2084,14 +2085,14 @@ code {
 .textshado-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(117, 5, 221, 0.9);
   pointer-events: none;
   transition: 0.4s;
   opacity: 0;
   visibility: hidden;
 }
 
-.textshado-overlay ~ .modall.show {
+.modall.show + .textshado-overlay {
   opacity: 1;
   visibility: visible;
 }
