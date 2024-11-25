@@ -1,5 +1,7 @@
 /* 04-my-miniprojects=ui --> 07-parallax-simple */
-
+.parallax-simple-body{
+  box-sizing: border-box;
+}
 .lazy-bg {
   height: 100vh;
   background-color: #ccc; /* رنگ پیش‌فرض */

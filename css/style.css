@@ -1863,6 +1863,10 @@ select {
 /* todo: my-MiniProjects: 05-TodoList UI */
 /* todo: my-MiniProjects: 05-BookList UI */
 /* 04-my-miniprojects=ui --> 07-parallax-simple */
+.parallax-simple-body {
+  box-sizing: border-box;
+}
+
 .lazy-bg {
   height: 100vh;
   background-color: #ccc; /* رنگ پیش‌فرض */
@@ -1922,7 +1926,7 @@ select {
 }
 
 /* استایل سکشن‌ها */
-.section {
+.section-spy {
   height: 100vh;
   display: flex;
   justify-content: center;
